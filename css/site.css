@@ -143,6 +143,8 @@ body {
     color: #fff
 }
 
+.ayah-period{padding: 0 7px;}
+
 a {
     color: #090600;
     text-decoration: none;
@@ -253,9 +255,6 @@ margin: 0;
   position: fixed;
   top: 10px;
 }
-button.navbar-toggle + a {
-display: none;
-}
 
 
 #header .navbar{
@@ -285,6 +284,10 @@ display: none;
 
 #header .chapter-dd a{
   padding: 5px 20px;
+  font-size: 14px;
+  color: #000;
+  border-radius: 12px;
+  margin-top:10px ;
 }
 
 
@@ -332,21 +335,45 @@ display: none;
 .navbar-icon-left{
   height: 40px; /* Adjust image height */
   width: auto;  /* Maintain aspect ratio */
+  float: left;
+}
+.navbar-icon-right{
+/*      height: 0px;
+    width: auto;
+    float: right;*/
+    position: absolute;
+    right: 20px;
+    top: 20px;
 
 }
 
-.navbar-custom{
+/*.navbar-custom{
   display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+}*/
+
 
 .chapter-navigator{
-  margin: 0 auto  !important;;
+  margin-top: 50px;
+    border: none;
+}
+
+
+@media only screen and (min-width: 760px) {
+  .chapter-navigator{
+  margin: 0 auto  !important;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+}
 }
 
 .chapter-num{
   font-size: 12px;
+  background-color: #d6ebec;
 }
 
 
@@ -361,7 +388,7 @@ display: none;
   width: 300px !important;
   max-width: 300px !important;
  background-color: #222222;
-	color: #fff;
+  color: #fff;
   transition: right 1s;
   z-index: 1031;
   box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
@@ -384,7 +411,7 @@ display: none;
     padding-left: 22px;
 }
 #settings-panel .close-panel{
-	color: #fff;
+  color: #fff;
   position: absolute;
     top: 5px;
     right: 15px;
@@ -530,6 +557,21 @@ input:checked + .slider:before {
   font-size: 15px;
 }
 
+#chapter-dropdown{
+  display: inline-block; /* Ensure both elements are inline */
+  vertical-align: middle; /* Align them vertically */
+  margin-right: 20px;
+}
+#verse-dropdown{
+  margin-left: 55px;
+}
+
+@media only screen and (min-width: 760px) {
+  #verse-dropdown{
+    margin-left:10px;
+  }
+}
+
 
 /*back to top*/
 #back-to-top {
@@ -635,9 +677,21 @@ input:checked + .slider:before {
 
 #header-logo-img-2{
   height: auto;
-  width: 120px;
-  margin-top: -11px;
-  margin-left: 12px;
+  width: 115px;
+/*  margin-top: -11px;
+  margin-left: 12px;*/
+}
+
+#navbar-button{
+  margin-left: 25px;
+  float: left;
+}
+
+/*#navbar-button + a {
+  display: none;
+}*/
+#navbar-button.collapsed + a {  /*header-logo-img*/
+  display: block;
 }
 
 
@@ -652,7 +706,9 @@ input:checked + .slider:before {
     height:340px;
      background-size: cover;
         margin-left: -45%;
-    margin-bottom: -4%;    
+    margin-bottom: -4%;   
+        position: sticky;
+    top: -282px; 
   }
   #chapter-banner {
     width:150%;
@@ -669,6 +725,8 @@ input:checked + .slider:before {
     -o-background-size: 131% 89%;
     background-size: 131% 89%;
     margin-bottom: -7.5%;  
+        position: sticky;
+    top: -201px;
   }
   #chapter-banner {
     width:150%;
@@ -687,6 +745,8 @@ input:checked + .slider:before {
     -o-background-size: 127% 78%;
     background-size: 127% 78%;
     margin-bottom: -7.5%; 
+    position: sticky;
+    top: -137x;
   }
   #chapter-banner {
     width:150%;
@@ -706,15 +766,15 @@ input:checked + .slider:before {
     -o-background-size: 131% 48%;
     background-size: 131% 48%;
     width:146%;
-    margin-bottom: -33.5%; 
+    margin-bottom: -36.5%; 
+        position: sticky;
+    top: -84px;
   }
   #chapter-banner {
-    width:150%;
+    width:158%;
   }
   #header-logo-img-2{
-    width: 55px;
-    margin-top: 13px;
-    margin-right: -50px;
+    display: none;
   }
 }
 #site-banner>.banner-layer{
@@ -796,6 +856,22 @@ icon-surah
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+home-surah
+[class*=" home-surah"], [class^=home-surah] {
+    font-family: surah_names_2!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 33px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+}
+
 /*----------chapter page-------------*/
 #chapter-title{
   margin: 26px 20px 2px 20px;
@@ -815,7 +891,7 @@ icon-surah
 }
 
 #chapter-verses .verse{
-  padding: 1.5% 0;
+  padding: 1.5% 2%;
 /*  border-bottom:1px solid hsl(183.64deg 25% 65.49% / 35%);*/
 
 }
