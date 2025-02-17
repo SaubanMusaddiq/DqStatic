@@ -19,7 +19,7 @@
     <title>DivyaQuran</title>
 
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="bBeswq6q8RV5nCOJHJB_9qaCI9AVvxDr10_Vz3CUlqhPwVMVbIr-l0whv3yvsXthFpnGhtby0pUVI31wNSe_fg" />
+<meta name="csrf-token" content="ho2AIIxIJonzMeUfuKheuB19pFqI-akxwcbSGzWuhT-lW3_3TmgpC8aMeeoLiVovrWZBDEu0a08DqnqkcB2s6Q" />
     
 
     <link rel="stylesheet" media="all" href="/assets/application.debug-354e4f416bd13170d2769796d74f610ca4d6d211034aaeeb11914e4fde9c55ed.css" data-turbolinks-track="reload" />
@@ -2167,6 +2167,13 @@ $(document).ready(function() {
    window.showModalContent = showModalContent;
    window.closeModalContent = closeModalContent;
 
+  $('#navbar-collapse-content').on('show.bs.collapse', function () {
+   $('#header-logo-img').hide(); // Hide the image when navbar expands
+  });
+  $('#navbar-collapse-content').on('hidden.bs.collapse', function () {
+    $('#header-logo-img').show(); // Show the image when navbar collapses
+  });
+
   $(window).scroll(function(){
       if ($(this).scrollTop() > 100) {
           $('#back-to-top').fadeIn();
@@ -2376,6 +2383,6 @@ $(document).ready(function() {
   </div>
 </div>
 
-  <script async nonce="" type="text/javascript" id="mini-profiler" src="/mini-profiler-resources/includes.js?v=35a79b300ab5afa978cb59af0b05e059" data-css-url="/mini-profiler-resources/includes.css?v=35a79b300ab5afa978cb59af0b05e059" data-version="35a79b300ab5afa978cb59af0b05e059" data-path="/mini-profiler-resources/" data-current-id="bik5g1m1hq5yojejhtdx" data-ids="bik5g1m1hq5yojejhtdx,gkv5xscll2kehn62fd10,oaxvp9aypr4pj3yvzcp4,s9grbw2ufern5pke8jf9,mhkuigxsv27tq5kr19ws,hnrc7mf30trdso0m2695,kx4pz8sjz0g0c3qwtbey,oqizlq34cxgo4umnol4q" data-horizontal-position="left" data-vertical-position="top" data-trivial="false" data-children="false" data-max-traces="20" data-controls="false" data-total-sql-count="false" data-authorized="true" data-toggle-shortcut="alt+p" data-start-hidden="false" data-collapse-results="true" data-html-container="body" data-hidden-custom-fields="" data-turbo-permanent="false"></script>
+  <script async nonce="" type="text/javascript" id="mini-profiler" src="/mini-profiler-resources/includes.js?v=35a79b300ab5afa978cb59af0b05e059" data-css-url="/mini-profiler-resources/includes.css?v=35a79b300ab5afa978cb59af0b05e059" data-version="35a79b300ab5afa978cb59af0b05e059" data-path="/mini-profiler-resources/" data-current-id="7coj6vw2uga5pw7htxa8" data-ids="7coj6vw2uga5pw7htxa8,8yb83s00133k5isyv5jo,141w3taphoz5ob5860pc,w8x0xh4ufj0eu07w5wh1,jn2ikfslxm6avcquns9i,s0hz1jy0s0pbh25pbpb8,zcbighimqyjg8wvh3abr,w1zfbc6atksahzaxhtnv,rxdje3gojdlfihndjf1d,h64ff71ivwjh6gkkdzrd,hoohzmjnedmizkt6of2x,lb9kdfg0bxmlb2a8xsym,nmqnr98ijmr313ybjkn1" data-horizontal-position="left" data-vertical-position="top" data-trivial="false" data-children="false" data-max-traces="20" data-controls="false" data-total-sql-count="false" data-authorized="true" data-toggle-shortcut="alt+p" data-start-hidden="false" data-collapse-results="true" data-html-container="body" data-hidden-custom-fields="" data-turbo-permanent="false"></script>
 </body>
 </html>

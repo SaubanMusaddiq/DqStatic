@@ -14,6 +14,15 @@
 
 @font-face
 {
+  font-family: 'Hafs';
+  font-style: normal;
+  font-weight: normal;
+  font-weight:400;
+   src: url('/arabic_fonts/Hafs.ttf') format('truetype');
+}
+
+@font-face
+{
   font-family: al_qalam_font2;
   font-style: normal;
   font-weight: normal;
@@ -183,7 +192,7 @@ a:hover{
   line-height: 200%;
   font-weight: normal;
   font-style: normal;
-  font-family: al_qalam_font, _PDMS_IslamicFont, Tahoma, Arial;
+  font-family: Hafs, _PDMS_IslamicFont, Tahoma, Arial;
   font-size: 32px;
   color: #555;
 }
@@ -394,6 +403,20 @@ padding-right: 20px;
   font-size: 21px;
 }
 
+@media only screen and (min-width: 760px) {
+  #hcn-ul{
+  margin: 7.5px -15px;
+      min-width: 480px;
+    padding-left: 61px;
+}
+  
+}
+
+
+.chapter-num-header{
+  font-size: 12px;
+}
+
 
 /**/
 
@@ -441,19 +464,47 @@ margin-top: -34px;
 
 
 .chapter-navigator{
-  margin-top: 64px;
+/*  margin-top: 64px;*/
     border: none;
-}
-
-
-@media only screen and (min-width: 760px) {
-  .chapter-navigator{
-  margin: 0 auto  !important;
-  position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+}
+
+@media only screen and (max-width: 760px) {
+  .home-header .chapter-navigator{
+  margin: -9px auto  !important;
  }
+ #navbar-collapse-content{
+  position: relative;
+  top:0;
+  left:0;
+  transform: none;
+ }
+ .home-header #chapter-kan{
+    padding-left: 28px;
+ }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+/*  .home-header .chapter-navigator{
+  margin: -9px auto  !important;
+ }*/
+
+
+/* .home-header #navbar-collapse-content{
+  min-width: 280px;
+  margin: -3px  !important
+
+ }*/
+/*
+ .home-header #chapter-kan{
+    padding-left: 28px;
+ }*/
+
 }
 
 .chapter-num{
@@ -473,7 +524,7 @@ margin-top: -34px;
   width: 300px !important;
   max-width: 300px !important;
  background-color: #222222;
-  color: #fff;
+	color: #fff;
   transition: right 1s;
   z-index: 1031;
   box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
@@ -496,7 +547,7 @@ margin-top: -34px;
     padding-left: 22px;
 }
 #settings-panel .close-panel{
-  color: #fff;
+	color: #fff;
   position: absolute;
     top: 5px;
     right: 15px;
@@ -922,10 +973,10 @@ padding-left: 70px;
 
 /*#navbar-button + a {
   display: none;
-}*/
-#navbar-button.collapsed + a {  /*header-logo-img*/
-  display: block;
 }
+#navbar-button.collapsed + a {
+  display: block;
+}*/
 
 
 @media only screen and (max-width: 1255px) {
@@ -977,9 +1028,9 @@ padding-left: 70px;
     -moz-background-size: 127% 78%;
     -o-background-size: 127% 78%;
     background-size: 127% 78%;
-    margin-bottom: -7.5%; 
+    margin-bottom: -8.5%; 
     position: sticky;
-    top: -137x;
+    top: -137px;
   }
   #chapter-banner {
     width:150%;
@@ -1154,6 +1205,17 @@ home-surah
 .list-surah-origin{
 border-right: 2px solid hsl(35.2, 64.9%, 81%);
 }
+@media only screen and (max-width: 760px) {
+  .chapter-list .chap-desc {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+  .chapter-list .chapter-num-p{
+    padding-left: 6px;
+  }
+}
+
+
 /*----------chapter page-------------*/
 #chapter-title{
   margin: 26px 20px 2px 20px;
