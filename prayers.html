@@ -2375,6 +2375,17 @@ $(document).ready(function() {
     }, 150);
   });
 
+
+});
+</script>
+<script>
+$(function() {
+  var hash = window.location.hash;
+  if (hash) {
+    $('#prayers-tabs a').each(function() {
+      if ($(this).attr('href') === hash) { $(this).tab('show'); }
+    });
+  }
 });
 </script>
 
