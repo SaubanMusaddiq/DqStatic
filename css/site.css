@@ -335,12 +335,16 @@ margin: 0;
     margin-top: 12px;
 }
 
+#header .prayers-dd {
+  font-size: 18px;
+  margin-top: 12px;
+  min-width: 220px;
+}
 
-#header .chapter-dd a, #header .verse-dd a{
+#header .chapter-dd a, #header .verse-dd a, #header .prayers-dd a {
   padding: 5px 20px;
   font-size: 16px;
   color: #000;
-/*  border-radius: 12px;*/
   margin-top:10px ;
 }
 
@@ -352,6 +356,23 @@ padding-right: 20px;
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
   background-color: #3d0000;
 }
+
+.navbar-nav .divider-vertical { display: none; }
+
+/* White separator line: right border on verse dropdown, gap on prayers side */
+#header #verse-dropdown {
+  border-right: 2px solid rgba(255, 255, 255, 0.55);
+  padding-right: 14px;
+}
+#header #prayers-dropdown {
+  padding-left: 14px !important;
+}
+@media (max-width: 767px) {
+  #header #verse-dropdown { border-right: none; padding-right: 3px; }
+  #header #prayers-dropdown { padding-left: 3px !important; }
+}
+
+
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
     background-color: #eed4b0;
@@ -372,13 +393,13 @@ padding-right: 20px;
     margin-top: 13px;
   }
 
-  #header .chapter-dd, #header .verse-dd{
-      width: 100%;
+  #header .chapter-dd, #header .verse-dd, #header .prayers-dd {
+    width: 100%;
   }
-  #header .chapter-dd a, #header .verse-dd a{
+  #header .chapter-dd a, #header .verse-dd a, #header .prayers-dd a {
     color: #fff;
   }
-  #header .chapter-dd .active>a, #header .verse-dd .active>a{
+  #header .chapter-dd .active>a, #header .verse-dd .active>a {
     color: #3d0000;
   }
 
@@ -403,16 +424,19 @@ padding-right: 20px;
 }
 
 #hcn-ul{
-  font-size: 21px;
+  font-size: 22px;
 }
 
 @media only screen and (min-width: 760px) {
   #hcn-ul{
-  margin: 7.5px -15px;
-      min-width: 480px;
+    margin: 7.5px -15px;
+    min-width: max-content;
     padding-left: 61px;
-}
-  
+    white-space: nowrap;
+  }
+  #hcn-ul > li > a {
+    white-space: nowrap;
+  }
 }
 
 
@@ -830,13 +854,18 @@ padding-left: 70px;
 }
 
 #verse-dropdown{
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-top: 3px;
 }
 #chapter-intro{
-  margin-left: 25px;
+  margin-left: 5px;
   margin-top: 3px;
 }
+
+#prayers-dropdown{
+  margin-top: 3px;
+  }
 
 @media only screen and (max-width: 760px) {
   #chapter-dropdown{
@@ -844,6 +873,11 @@ padding-left: 70px;
     padding-bottom: 12px !important;
   }
   #verse-dropdown{
+    padding-top: 12px !important;
+    margin-left: 75px;
+    padding-bottom: 12px !important;
+  }
+  #prayers-dropdown{
     padding-top: 12px !important;
     margin-left: 75px;
     padding-bottom: 12px !important;
