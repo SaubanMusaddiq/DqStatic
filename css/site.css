@@ -1434,6 +1434,7 @@ text-align: center;
 }
 
 #main_contents_value{
+  display: block;
   font-size: 125%;
     font-family: 'Noto-Sans-Kannada', Arial, Helvetica, sans-serif;
     font-weight: 420;
