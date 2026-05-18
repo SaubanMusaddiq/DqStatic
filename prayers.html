@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html>
   <head>
@@ -2109,6 +2109,82 @@
       margin-right: -15px;
     }
   }
+
+  /* ── Quranic Duas cards ── */
+  .dua-card {
+    background: #fff;
+    border: 1px solid #e8d9c0;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .dua-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0e5d0;
+  }
+  .dua-title-group {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .dua-number {
+    font-weight: 700;
+    color: #3d0000;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+  .dua-title-kn {
+    font-size: 19px;
+    font-weight: 600;
+    color: #222;
+  }
+  .dua-title-en {
+    font-size: 16px;
+    color: #777;
+  }
+  .dua-ref {
+    font-size: 15px;
+    color: #3d0000;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: right;
+    padding-top: 2px;
+  }
+  .dua-arabic {
+    font-size: 28px;
+    line-height: 2;
+    text-align: right;
+    direction: rtl;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    padding: 8px 0 12px;
+    border-bottom: 1px dashed #e0d0b8;
+  }
+  .dua-kannada {
+    font-size: 19px;
+    line-height: 1.75;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  .dua-english {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    font-style: italic;
+  }
+  @media (max-width: 767px) {
+    .dua-card { padding: 14px 16px; }
+    .dua-header { flex-direction: column; gap: 4px; }
+    .dua-ref { text-align: left; }
+    .dua-arabic { font-size: 24px; }
+  }
 </style>
 
 <div id="prayers-wrapper" class="content-body container-fluid chapter-content" style="padding-left: 0; padding-right: 0; overflow-x: hidden;">
@@ -2139,18 +2215,1219 @@
         <div class="prayers-section-title">Quranic Duas</div>
         <p class="prayers-section-subtitle">Supplications drawn from the verses of the Holy Quran</p>
         <div class="verses" id="quranic-verses">
-          <div class="verse-parent">
-            <div class="row" id="quranic-dua-no-1">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">1</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">1.</span>
+                <span class="dua-title-kn">ಅಮಾನ್ರರಸೂಲ್</span>
+                <span class="dua-title-en">(Amana-Rrasul)</span>
               </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا, وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಎಲ್ಲ ಕರ್ಮಗಳ ಅಂತಿಮ ಪರಿಣಾಮವನ್ನು ಅತ್ಯುತ್ತಮಗೊಳಿಸು, ಇಹಲೋಕದ ಅವಮಾನ ಹಾಗೂ ಪರಲೋಕದ ಶಿಕ್ಷೆಯಿಂದ ನಮ್ಮನ್ನು ರಕ್ಷಿಸು</div>
-              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 285-286</div>
             </div>
+            <div class="dua-arabic" dir="rtl">آمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ   -   لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</div>
+            <div class="dua-kannada">ಸಂದೇಶವಾಹಕರು ತನ್ನ ಪ್ರಭುವಿನ ವತಿಯಿಂದ ಅವತೀರ್ಣಗೊಂಡುದರ ಮೇಲೆ ವಿಶ್ವಾಸವಿರಿಸಿದ್ದಾರೆ ಮತ್ತು ಈ ಸಂದೇಶವಾಹಕರ ಮೇಲೆ ವಿಶ್ವಾಸವಿಡುವವರು ಸಹ ಈ ಬೋಧನೆಯನ್ನು ಹೃತ್ಪೂರ್ವಕ ಸ್ವೀಕರಿಸಿದ್ದಾರೆ. ಇವರೆಲ್ಲರೂ ಅಲ್ಲಾಹನಲ್ಲಿಯೂ ಅವನ ದೇವಚರರಲ್ಲಿಯೂ ಅವನ ದಿವ್ಯಗ್ರಂಥಗಳಲ್ಲಿಯೂ ಅವನ ಸಂದೇಶವಾಹಕರಲ್ಲಿಯೂ ವಿಶ್ವಾಸವಿರಿಸುತ್ತಾರೆ. ಅವರು ಹೇಳುತ್ತಾರೆ, &quot;ನಾವು ಅಲ್ಲಾಹನ ಸಂದೇಶವಾಹಕರ ನಡುವೆ ಯಾವತ್ತೂ ತಾರತಮ್ಯವನ್ನಿರಿಸುವುದಿಲ್ಲ. ನಾವು ಆಜ್ಞೆಯನ್ನು ಆಲಿಸಿದೆವು ಮತ್ತು ಅನುಸರಣೆಯನ್ನು ಸ್ವೀಕರಿಸಿದೆವು. ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ನಿನ್ನಿಂದ ಪಾಪವಿಮೋಚನೆಯನ್ನು ಬಯಸುತ್ತೇವೆ ಮತ್ತು ನಮಗೆ ನಿನ್ನ ಕಡೆಗೇ ಮರಳಲಿಕ್ಕಿದೆ   - ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮಿಂದ ಪ್ರಮಾದವಶಾತ್ ಅಪರಾಧಗಳಾಗಿಬಿಟ್ಟರೆ ಅವುಗಳಿಗಾಗಿ ನಮ್ಮನ್ನು ಹಿಡಿಯಬೇಡ. ಪ್ರಭೂ, ನಮ್ಮ ಪೂರ್ವಿಕರ ಮೇಲೆ ಹೊರಿಸಿದಂತಹ ಹೊರೆಯನ್ನು ನಮ್ಮ ಮೇಲೆ ಹೊರಿಸಬೇಡ, ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮಿಂದ ಹೊರಲು ಸಾಧ್ಯವಾಗದ ಹೊರೆಯನ್ನು ನಮ್ಮ ಮೇಲೆ ಹೊರಿಸಬೇಡ, ನಮ್ಮ ಪಾಪಗಳನ್ನು ಪರಿಹರಿಸು, ನಮ್ಮನ್ನು ಕ್ಷಮಿಸು, ನಮ್ಮ ಮೇಲೆ ಕೃಪೆದೋರು. ನೀನೇ ನಮ್ಮ ಸ್ವಾಮಿಯು. ಸತ್ಯನಿಷೇಧಿಗಳ ಎದುರು ನಮಗೆ ಸಹಾಯ ಮಾಡು.</div>
+            <div class="dua-english">Allah does not lay a responsibility on anyone beyond his capacity. In his favour shall be whatever good each one does, and against him whatever evil he does. (Believers! Pray thus to your Lord): &quot;Our Lord! Take us not to task if we forget or commit mistakes. Our Lord! Lay not on us a burden such as You laid on those gone before us. Our Lord! Lay not on us burdens which we do not have the power to bear. And overlook our faults, and forgive us, and have mercy upon us. You are our Guardian; so grant us victory against the unbelieving&#160;folk.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">2.</span>
+                <span class="dua-title-kn">ಇಹ, ಪರ ಒಳಿತನ ಅಪೇಕ್ಷೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(Dua for This word and hereafter)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 201</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮಗೆ ಇಹಲೋಕದಲ್ಲಿಯೂ ಒಳಿತನ್ನು ದಯಪಾಲಿಸು ಪರಲೋಕದಲ್ಲಿಯೂ ಒಳಿತನ್ನು ದಯಪಾಲಿಸು ಮತ್ತು ನಮ್ಮನ್ನು ಅಗ್ನಿಯಾತನೆಯಿಂದ ರಕ್ಷಿಸು&quot; ಎನ್ನುವವರೂ ಇದ್ದಾರೆ.</div>
+            <div class="dua-english">“Our Lord, grant us what is good in this world and what is good in the World to Come, and protect us from the chastisement of the Fire.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">3.</span>
+                <span class="dua-title-kn">ತಾಳ್ಮೆಗಾಗಿ ದುವಾ</span>
+                <span class="dua-title-en">(Dua for Patience)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 250</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮಗೆ ಸಹನೆಯನ್ನು ಪ್ರದಾನ ಮಾಡು. ನಮ್ಮ ಹೆಜ್ಜೆಗಳನ್ನು ಅಚಲಗೊಳಿಸು. ಸತ್ಯನಿಷೇಧಿ ತಂಡದ ಎದುರು ನಮಗೆ ವಿಜಯ ನೀಡು.</div>
+            <div class="dua-english">Our Lord! Shower us with patience, and set our feet firm, and grant us victory over this unbelieving people.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">4.</span>
+                <span class="dua-title-kn">ಆಯತುಲ್  ಖುದುಸಿ</span>
+                <span class="dua-title-en">(Ayathul Qudsi)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 255</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ</div>
+            <div class="dua-kannada">ಅಲ್ಲಾಹ್ ಚಿರಂತನು, ಸ್ವಯಂಜೀವಂತನು. ಅಖಿಲ ಪ್ರಪಂಚದ ನಿಯಂತ್ರಕನಾದ ಆತನ ಹೊರತು ಆರಾಧ್ಯನಾರೂ ಇಲ್ಲ. ಅವನಿಗೆ ತೂಕಡಿಕೆಯಾಗಲೀ ನಿದ್ರೆಯಾಗಲೀ ಬಾಧಿಸುವುದಿಲ್ಲ. ಆಕಾಶಗಳಲ್ಲಿ ಮತ್ತು ಭೂಮಿಯಲ್ಲಿ ಇರುವುದೆಲ್ಲವೂ ಆತನದೇ. ಆತನ ಸನ್ನಿಧಿಯಲ್ಲಿ ಆತನ ಅಪ್ಪಣೆಯಿಲ್ಲದೆ ಶಿಫಾರಸು ಮಾಡತಕ್ಕವನಾರಿದ್ದಾನೆ? ದಾಸರ ಮುಂದಿರುವುದನ್ನೂ ಆತನು ಬಲ್ಲನು. ಅವರಿಂದ ಮರೆಯಾಗಿರುವುದನ್ನೂ ಆತನು ಬಲ್ಲನು. ಆತನು ಸ್ವತಃ ತಿಳಿಯಗೊಡಿಸುವ ಹೊರತು ಆತನ ಜ್ಞಾನ ಭಂಡಾರದಿಂದ ಯಾವ ವಿಷಯವನ್ನೂ ಅವರು ತಿಳಿಯಲಾರರು. ಅವನ ಅಧಿಕಾರವು ಆಕಾಶಗಳನ್ನೂ ಭೂಮಿಯನ್ನೂ ವ್ಯಾಪಿಸಿದೆ. ಅವುಗಳ ಸಂರಕ್ಷಣೆಯು ಆತನಿಗೆ ದಣಿಸುವಂಥ ಕಾರ್ಯವಲ್ಲ. ಅವನು ಏಕೈಕ ಮಹೋನ್ನತನೂ  ಸರ್ವಶ್ರೇಷ್ಠನೂ ಆಗಿರುತ್ತಾನೆ.</div>
+            <div class="dua-english">Allah, the Ever-Living, the Self-Subsisting by Whom all subsist, there is no god but He. Neither slumber seizes Him, nor sleep; to Him belongs all that is in the heavens and all that is in the earth. Who is there who might intercede with Him save with His leave?He knows what lies before them and what is hidden from them, whereas they cannot attain to anything of His knowledge save what He wills them to attain. His Dominion overspreads the heavens and the earth, and their upholding wearies Him not. He is All-High, All-Glorious.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">5.</span>
+                <span class="dua-title-kn">ಪ್ರವಾದಿ ಇಬ್ರಾಹಿಂ (ಅ) ಅವರ ಪ್ರಾರ್ಥನೆಯ -1</span>
+                <span class="dua-title-en">(Ibrahim(A)&#39;s Prayer For Makkah - 1)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 126</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ اجْعَلْ هَٰذَا بَلَدًا آمِنًا وَارْزُقْ أَهْلَهُ مِنَ الثَّمَرَاتِ مَنْ آمَنَ مِنْهُمْ بِاللَّهِ وَالْيَوْمِ الْآخِرِ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ! ಈ ನಗರವನ್ನು ಶಾಂತಿಯ ನಗರವನ್ನಾಗಿ ಮಾಡು ಮತ್ತು ಇಲ್ಲಿಯ ನಿವಾಸಿಗಳ ಪೈಕಿ ಅಲ್ಲಾಹ್ ಮತ್ತು ಅಂತಿಮ ದಿನದಲ್ಲಿ ವಿಶ್ವಾಸವಿಡುವವರಿಗೆ ನಾನಾ ರೀತಿಯ ಫಲಗಳ ಆಹಾರವನ್ನು ನೀಡು</div>
+            <div class="dua-english">O my Lord! Make this city a city of peace and provide its people with fruits for those who believe in Allah and the Last Day.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">6.</span>
+                <span class="dua-title-kn">ನಮ್ಮ ಕಾರ್ಯಗಳ ತೃಪ್ತಿಯನ್ನು ಬಯಸುವುದು</span>
+                <span class="dua-title-en">(Seeking Satisfaction of our deeds)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 127</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ! ನಮ್ಮಿಂದ ಈ ಸೇವೆಯನ್ನು ಸ್ವೀಕರಿಸು; ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ಎಲ್ಲವನ್ನೂ ಆಲಿಸುವವನೂ, ಎಲ್ಲವನ್ನೂ ತಿಳಿದವನೂ ಆಗಿರುತ್ತೀ.</div>
+            <div class="dua-english">O our Lord! Accept this service from us; surely You are the All-Hearing, the All-Knowing.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">7.</span>
+                <span class="dua-title-kn">ನಮ್ಮ ಕಾರ್ಯಗಳ ತೃಪ್ತಿಯನ್ನು ಬಯಸುವುದು - 2</span>
+                <span class="dua-title-en">(Seeking Satisfaction of our deeds  - 2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 128</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا وَاجْعَلْنَا مُسْلِمَيْنِ لَكَ وَمِنْ ذُرِّيَّتِنَا أُمَّةً مُسْلِمَةً لَكَ وَأَرِنَا مَنَاسِكَنَا وَتُبْ عَلَيْنَا ۖ إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ</div>
+            <div class="dua-kannada">ಓ ಪ್ರಭೂ, ನಮ್ಮೀರ್ವರನ್ನು ನಿನ್ನ &#39;ಮುಸ್ಲಿಮ&#39;ರನ್ನಾಗಿ(ಆಜ್ಞಾನುಸಾರಿಗಳಾಗಿ) ಮಾಡು. ನಮ್ಮ ಸಂತತಿಯಲ್ಲಿ ನಿನ್ನ ಆಜ್ಞಾನುಸಾರಿಯಾದ ಒಂದು ಸಮುದಾಯವನ್ನು ಎಬ್ಬಿಸು. ನಮಗೆ ನಿನ್ನ ದಾಸ್ಯ-ಆರಾಧನೆಯ ಕ್ರಮಗಳನ್ನು ತೋರಿಸಿ ಕೊಡು ಮತ್ತು ನಮ್ಮ ಅಪರಾಧಗಳನ್ನು ಕ್ಷಮಿಸು. ನೀನು ಮಹಾ ಕ್ಷಮಾದಾನಿಯೂ ಕರುಣಾನಿಧಿಯೂ ಆಗಿರುವೆ.</div>
+            <div class="dua-english">Lord, make us Your Muslims (submissive servants) and also raise from our offspring a community which should be Muslim (submissive to Your Will). Show us the ways of Your worship and forbear our shortcomings: You are Forgiving and Merciful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">8.</span>
+                <span class="dua-title-kn">ಪ್ರವಾದಿ ಇಬ್ರಾಹಿಂ (ಅ) ಅವರ ಪ್ರಾರ್ಥನೆಯ -2</span>
+                <span class="dua-title-en">(Ibrahim(A)&#39;s Prayer -2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 129</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا وَابْعَثْ فِيهِمْ رَسُولًا مِنْهُمْ يَتْلُو عَلَيْهِمْ آيَاتِكَ وَيُعَلِّمُهُمُ الْكِتَابَ وَالْحِكْمَةَ وَيُزَكِّيهِمْ ۚ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ</div>
+            <div class="dua-kannada">ಓ ಪ್ರಭೂ, ಅವರಿಗೆ ನಿನ್ನ ವಚನಗಳನ್ನು ಪಠಿಸಿ ಹೇಳುವ ಮತ್ತು ಗ್ರಂಥವನ್ನೂ ಯುಕ್ತಿಯನ್ನೂ ಬೋಧಿಸುವ ಹಾಗೂ ಅವರ ಜೀವನವನ್ನು ಸಂಸ್ಕರಿಸುವ  ಓರ್ವ ಸಂದೇಶವಾಹಕನನ್ನು ಅವರೊಳಗಿಂದಲೇ ನಿಯೋಜಿಸು. ನೀನು ಮಹಾಪ್ರತಾಪಿಯೂ ಯುಕ್ತಿಪೂರ್ಣನೂ ಆಗಿರುವೆ.</div>
+            <div class="dua-english">Lord, raise up from among them a Messenger who shall recite Your Revelations to them and teach them the Book and Wisdom and purify their lives. You art All-Powerful and All-Wise</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">9.</span>
+                <span class="dua-title-kn">[stub]</span>
+                <span class="dua-title-en">(Humbless in Seeking  Knowledge)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 32</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">قَالُوا سُبْحَانَكَ لَا عِلْمَ لَنَا إِلَّا مَا عَلَّمْتَنَا ۖ إِنَّكَ أَنْتَ الْعَلِيمُ الْحَكِيمُ</div>
+            <div class="dua-kannada">ನೀನು ಮಹಾ ಮಹಿಮನು, ನಮಗಂತು ನೀನು ಕಲಿಸಿ ಕೊಟ್ಟಷ್ಟು ಜ್ಞಾನ ಮಾತ್ರ ಇದೆ. ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ಜ್ಞಾನಪೂರ್ಣನೂ ಯುಕ್ತಿಪೂರ್ಣನೂ ಆಗಿರುತ್ತೀ</div>
+            <div class="dua-english">Glory be to You. You alone are free from defect. We possess only that much knowledge which You have given us. Indeed You alone are All-Knowing and All-Wise.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">10.</span>
+                <span class="dua-title-kn">[stub]</span>
+                <span class="dua-title-en">(Protection from Ignorance)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 2, ಸೂಕ್ತ: 67</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">أَعُوذُ بِاللَّهِ أَنْ أَكُونَ مِنَ الْجَاهِلِينَ</div>
+            <div class="dua-kannada">ಮೂಢರಂತಾಡುವುದರ ಬಗ್ಗೆ ನಾನು ಅಲ್ಲಾಹನ ಅಭಯವನ್ನು ಯಾಚಿಸುತ್ತೇನೆ</div>
+            <div class="dua-english">I crave Allah&#39;s protection from behaving like ignorant people.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">11.</span>
+                <span class="dua-title-kn">ನಮ್ಮಿಂದ ಸಂಭವಿಸಿ ಹೋದ ಅಪರಾಧಗಳ ಕ್ಷಮೆಯ ದುವಾ. - 1</span>
+                <span class="dua-title-en">(Seeking Forgiveness 1)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 193-194</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلْإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا ۚ رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا: وَتَوَفَّنَا مَعَ الْأَبْرَارِ<br>    رَبَّنَا وَآتِنَا مَا وَعَدْتَنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ ۗ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ಸತ್ಯವಿಶ್ವಾಸದ ಕಡೆಗೆ ಆಹ್ವಾನಿಸುತ್ತಿದ್ದ ಮತ್ತು ನಿಮ್ಮ ಪ್ರಭುವನ್ನು ನಂಬಿರೆಂದು ಹೇಳುತ್ತಿದ್ದ ಓರ್ವ ಕರೆ ಕೊಡುವಾತನನ್ನು ಆಲಿಸಿದೆವು. ಅವನ ಆಹ್ವಾನವನ್ನು ಸ್ವೀಕರಿಸಿದೆವು.   ಆದುದರಿಂದ ಓ ನಮ್ಮೊಡೆಯಾ, ನಮ್ಮಿಂದ ಸಂಭವಿಸಿ ಹೋದ ಅಪರಾಧಗಳನ್ನು ಕ್ಷಮಿಸು. ನಮ್ಮಲ್ಲಿರುವ ಕೆಡುಕುಗಳನ್ನು ದೂರೀಕರಿಸು ಮತ್ತು ನಮ್ಮ ಅವಸಾನವನ್ನು ಸಜ್ಜನರೊಂದಿಗೆ ಮಾಡು.<br><br> ಓ ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ನಿನ್ನ ಸಂದೇಶವಾಹಕರ ಮೂಲಕ ಮಾಡಿರುವ ವಾಗ್ದಾನಗಳನ್ನು ನಮಗೆ ನೆರವೇರಿಸಿಕೊಡು ಮತ್ತು ಪುನರುತ್ಥಾನ ದಿನದಂದು ನಮ್ಮನ್ನು ಅವಮಾನಕ್ಕೊಳಪಡಿಸಬೇಡ. ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ನಿನ್ನ ವಾಗ್ದಾನಕ್ಕೆ ವ್ಯತಿರಿಕ್ತವಾಗಿ ನಡೆಯುವವನಲ್ಲ.</div>
+            <div class="dua-english">Our Lord! Indeed we heard a crier calling to the faith saying: &quot;Believe in your Lord&quot;; so we did believe. Our Lord, forgive us our sins, and wipe out our evil deeds and make us die with the truly&#160;pious.&#39;&#160;<br><br>&#39;Our Lord, fulfil what You promised to us through Your Messengers, and disgrace us not on the Day of Resurrection; indeed You never go back on&#160;Your&#160;promise.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">12.</span>
+                <span class="dua-title-kn">ನರಕಾಗ್ನಿಯಿಂದ ರಕ್ಷಣೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(Forgiveness and protection from hell)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 16</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">الَّذِينَ يَقُولُونَ رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ವಿಶ್ವಾಸವಿರಿಸಿದೆವು; ನಮ್ಮ ಅಪರಾಧಗಳನ್ನು ಕ್ಷಮಿಸು ಮತ್ತು ನಮ್ಮನ್ನು ನರಕಾಗ್ನಿಯಿಂದ ರಕ್ಷಿಸು</div>
+            <div class="dua-english">Our Lord! We do indeed believe, so forgive us our sins and keep us safe from the chastisement&#160;of&#160;the&#160;Fire&#39;;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">13.</span>
+                <span class="dua-title-kn">ದೃಢವಾದ ಇಮಾನ್ ಗಾಗಿ ಪ್ರಾರ್ಥನೆ.</span>
+                <span class="dua-title-en">(Firm in Imaan)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 147</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮ ಅಪರಾಧಗಳನ್ನೂ ಲೋಪದೋಷಗಳನ್ನೂ ಕ್ಷಮಿಸು. ನಮ್ಮ ಕೆಲಸ ಕಾರ್ಯಗಳಲ್ಲಿ ಸಂಭವಿಸಿ ಬಿಟ್ಟ ಅತಿಕ್ರಮಗಳನ್ನು ಕ್ಷಮಿಸು. ನಮ್ಮ ಪಾದಗಳನ್ನು ಸ್ಥಿರಗೊಳಿಸು ಮತ್ತು ಸತ್ಯನಿಷೇಧಿಗಳ ಎದುರು ನಮಗೆ ಸಹಾಯ ಮಾಡು.</div>
+            <div class="dua-english">Our Lord! Forgive us our sins, and our excesses, and set our feet firm, and succour us against those who deny&#160;the&#160;Truth.&#39;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">14.</span>
+                <span class="dua-title-kn">ಸುನೀತ ಸಂತತಿಯ ಪ್ರಾರ್ಥನೆ. 2</span>
+                <span class="dua-title-en">(Asking Dua For Grant a child -2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 38</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ</div>
+            <div class="dua-kannada">ಪ್ರಭೂ, ನಿನ್ನ ಮಹಿಮೆಯಿಂದ ನನಗೆ ಸುನೀತ ಸಂತತಿ ದಯಪಾಲಿಸು. ನೀನೇ ಪ್ರಾರ್ಥನೆಯನ್ನಾಲಿಸುವವನಾಗಿರುತ್ತಿ.</div>
+            <div class="dua-english">My Lord! Bestow upon me of Thy bounty goodly offspring. Lo! Thou art the Hearer&#160;of&#160;Prayer.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">15.</span>
+                <span class="dua-title-kn">ನಮಗೆ ಅಲ್ಲಾಹ್ ಸಾಕು</span>
+                <span class="dua-title-en">(seeking Help From Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 173</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ</div>
+            <div class="dua-kannada">ನಮಗೆ ಅಲ್ಲಾಹ್ ಸಾಕು ಮತ್ತು ಅವನೇ ಅತ್ಯುತ್ತಮ ಕಾರ್ಯಸಾಧಕನು</div>
+            <div class="dua-english">“Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">16.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹ್ ಸರ್ವ  ಶ್ರೇಷ್ಠನು</span>
+                <span class="dua-title-en">(allah supremarcy over all thinks)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 26-27</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ,  <br>  ُولِجُ اللَّيْلَ فِي النَّهَارِ وَتُولِجُ النَّهَارَ فِي اللَّيْلِ ۖ وَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ ۖ وَتَرْزُقُ مَنْ تَشَاءُ بِغَيْرِ حِسَابٍ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್, ಸಕಲ ವಿಶ್ವಾಧಿಪತ್ಯದ ಒಡೆಯನೇ, ನೀನು ನಿನಗಿಷ್ಟ ಬಂದವರಿಗೆ ರಾಜ್ಯಾಧಿಕಾರ ನೀಡುವೆ ಮತ್ತು ನಿನಗಿಷ್ಟ ಬಂದವರಿಂದ ಕಸಿದು ಕೊಳ್ಳುವೆ. ನಿನಗಿಷ್ಟ ಬಂದವರಿಗೆ ಪ್ರತಿಷ್ಠೆ ಪ್ರದಾನ ಮಾಡುವೆ. ನಿನಗಿಷ್ಟ ಬಂದವರನ್ನು ಅವಮಾನಪಡಿಸುವೆ. ಒಳಿತುಗಳು ನಿನ್ನ ಅಧಿಕಾರ ಹಸ್ತದಲ್ಲಿವೆ. ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ಸರ್ವಶಕ್ತನಾಗಿರುವೆ. ,  ನೀನು ಇರುಳನ್ನು ಹಗಲಿನೊಳಗೆ ಪೋಣಿಸುತ್ತಲೂ ಹಗಲನ್ನು ಇರುಳಿನೊಳಗೆ ಪೋಣಿಸುತ್ತಲೂ ತರುವೆ. ಜೀವಿಗಳಿಂದ ನಿರ್ಜೀವಿಗಳನ್ನು ನಿರ್ಜೀವಿಗಳಿಂದ ಜೀವಿಗಳನ್ನೂ ಹೊರಗೆ ತೆಗೆಯುವೆ ಮತ್ತು ನಿನಗಿಷ್ಟ ಬಂದವರಿಗೆ ಅಸಂಖ್ಯಾತ ಜೀವನಾಧಾರ ನೀಡುವೆ.</div>
+            <div class="dua-english">O Allah, Lord of all dominion! You give dominion to whom You will, and take away dominion from whom You will, and You exalt whom You will, and abase whom You will. In Your Hand is all good. Surely You are All-Power-ful.,  You cause the night to pass into the day and the day to pass into the night. You bring forth the living out of the dead, and You bring the dead out of the living, and You give sustenance to whom You will beyond all reckoning.&#39;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">17.</span>
+                <span class="dua-title-kn">ಈಮಾನ್ ಅನ್ನು ಬಲಪಡಿಸುವುದು</span>
+                <span class="dua-title-en">(Strengthing Imaan)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 8</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً ۚ إِنَّكَ أَنْتَ الْوَهَّابُ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ನಮ್ಮನ್ನು ನೇರಮಾರ್ಗದಲ್ಲಿ ಹಾಕಿರುತ್ತ ಪುನಃ ನಮ್ಮ ಮನಸ್ಸುಗಳನ್ನು ದೋಷಗಳಲ್ಲಿ ಸಿಲುಕಿಸಿಬಿಡಬೇಡ. ನೀನು ನಿನ್ನ ಅನುಗ್ರಹಾಗಾರದಿಂದ ನಮಗೆ ಕೃಪೆಯನ್ನು ನೀಡು. ನೀನೇ ನೈಜ ಮಹಾದಾನಿಯಾಗಿರುತ್ತೀ.</div>
+            <div class="dua-english">Our Lord, let not our hearts become perverse after &#39;Thou hast once guided us aright, bestow upon us mercy from Thyself for Thou art the real Benefactor!</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">18.</span>
+                <span class="dua-title-kn">ವಿಧ ನಿರ್ಣಾಯಕ ದಿನ</span>
+                <span class="dua-title-en">(Judgement Day)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 9</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا إِنَّكَ جَامِعُ النَّاسِ لِيَوْمٍ لَا رَيْبَ فِيهِ ۚ إِنَّ اللَّهَ لَا يُخْلِفُ الْمِيعَادَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ಖಂಡಿತವಾಗಿಯೂ ಅದೊಂದು ದಿನ ಎಲ್ಲ ಜನರನ್ನು ಒಟ್ಟುಗೂಡಿಸಲಿರುವೆ. ಆ ದಿನ ಬಂದೊದಗುವುದರಲ್ಲಿ ಏನೇನೂ ಸಂಶಯವಿಲ್ಲ. ನೀನು ಎಷ್ಟು ಮಾತ್ರಕ್ಕೂ ವಚನಭಂಗ ಮಾಡುವವನಲ್ಲ.</div>
+            <div class="dua-english">Lord! Thou wilt surely gather all mankind together on a Day which is inevitable, for Thou never failest to fulfil Thy promise.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">19.</span>
+                <span class="dua-title-kn">ಸಾಕ್ಷ್ಯ ವಹಿಸುವವರ ಯಾದಿಯಲ್ಲಿ</span>
+                <span class="dua-title-en">(Make us Believers)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 3, ಸೂಕ್ತ: 53</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا آمَنَّا بِمَا أَنْزَلْتَ وَاتَّبَعْنَا الرَّسُولَ فَاكْتُبْنَا مَعَ الشَّاهِدِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ಅವತೀರ್ಣಗೊಳಿಸಿದ ಆದೇಶವನ್ನು ನಾವು ಒಪ್ಪಿಕೊಂಡೆವು ಮತ್ತು ಸಂದೇಶವಾಹಕರ ಅನುಸರಣೆಯನ್ನೂ ಸ್ವೀಕರಿಸಿದೆವು. ನಮ್ಮ ಹೆಸರನ್ನು ಸಾಕ್ಷ್ಯ ವಹಿಸುವವರ ಯಾದಿಯಲ್ಲಿ ಬರೆದುಕೋ</div>
+            <div class="dua-english">Lord! we have believed in that which Thou hast sent down and followed Thy Messenger; so enroll us among those who bear witness.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">20.</span>
+                <span class="dua-title-kn">ದಬ್ಬಾಳಿಕೆ ಮಾಡುವವರಿಂದ ರಕ್ಷಣೆ</span>
+                <span class="dua-title-en">(Protection From Oppressors)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 4, ಸೂಕ್ತ: 75</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَخْرِجْنَا مِنْ هَٰذِهِ الْقَرْيَةِ الظَّالِمِ أَهْلُهَا وَاجْعَلْ لَنَا مِنْ لَدُنْكَ وَلِيًّا وَاجْعَلْ لَنَا مِنْ لَدُنْكَ نَصِيرًا</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ಅಕ್ರಮಿಗಳು ವಾಸಿಸುವ ಈ ನಾಡಿನಿಂದ ನಮ್ಮನ್ನು ಹೊರ ತೆಗೆ. ನೀನು ನಿನ್ನ ಕಡೆಯಿಂದ ನಮಗೊಬ್ಬ ಮೇಲ್ವಿಚಾರಕನನ್ನು ಮತ್ತು ಒಬ್ಬ ಸಹಾಯಕನನ್ನು ನೇಮಿಸು</div>
+            <div class="dua-english">Our Lord, bring us out of this land whose people are oppressors and appoint for us from Yourself, a protector, and appoint for us from Yourself a helper&#39;?.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">21.</span>
+                <span class="dua-title-kn">ಸತ್ಯ ಸಾಕ್ಷ್ಯ ದ ದುವಾ</span>
+                <span class="dua-title-en">(Join me with the Righteous people)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 5, ಸೂಕ್ತ: 83</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا آمَنَّا فَاكْتُبْنَا مَعَ الشَّاهِدِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ವಿಶ್ವಾಸವಿರಿಸಿಕೊಂಡೆವು, ನಮ್ಮ ಹೆಸರನ್ನು ಸಾಕ್ಷ್ಯ ನೀಡುವವರೊಂದಿಗೆ ಬರೆದುಕೋ.</div>
+            <div class="dua-english">Our Lord! We do believe; write us down, therefore, with those who bear witness&#160;(to&#160;the&#160;Truth).</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">22.</span>
+                <span class="dua-title-kn">ಜೀವನೋಪಾಯ</span>
+                <span class="dua-title-en">(Provide us Rizk (Sustenance))</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 5, ಸೂಕ್ತ: 114</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ ۖ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್, ನಮ್ಮ ಪ್ರಭೂ, ಆಕಾಶದಿಂದ ನಮಗೊಂದು ಊಟದ ಹರಿವಾಣವನ್ನು ಇಳಿಸು. ಅದು ನಮಗೂ ನಮ್ಮ ಹಿಂಗಾಮಿಗಳಿಗೂ ಮುಂಗಾಮಿಗಳಿಗೂ ಸಂತಸದ ಸಂದರ್ಭವಾಗಿಯೂ ನಿನ್ನ ಕಡೆಯಿಂದ ಒಂದು ದೃಷ್ಟಾಂತವಾಗಿಯೂ ಪರಿಣಮಿಸಲಿ. ನಮಗೆ ಆಹಾರ ಪ್ರದಾನ ಮಾಡು. ನೀನು ಅತ್ಯುತ್ತಮ ಅನ್ನದಾತನು</div>
+            <div class="dua-english">O Allah, our Lord, send to us from heaven a tray of food that it may become a recurring festival to us, to the first of us and to the last of us, and that it may be a Sign from You. Provide for us and You are the best of providers.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">23.</span>
+                <span class="dua-title-kn">ನನ್ನನ್ನು ಸಜ್ಜನರೊಂದಿಗೆ ಸೇರಿಸು.</span>
+                <span class="dua-title-en">(Join me with the righteous people)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 5, ಸೂಕ್ತ: 84</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">وَنَطْمَعُ أَنْ يُدْخِلَنَا رَبُّنَا مَعَ الْقَوْمِ الصَّالِحِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ವಿಶ್ವಾಸವಿರಿಸಿಕೊಂಡೆವು, ನಮ್ಮ ಹೆಸರನ್ನು ಸಾಕ್ಷ್ಯ ನೀಡುವವರೊಂದಿಗೆ ಬರೆದುಕೋ.</div>
+            <div class="dua-english">when we are eager that our Lord may count us with the righteous people?</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">24.</span>
+                <span class="dua-title-kn">ಮೂಸ (ಅ) ರ ದುವಾ    Moosa (a)&#39;s Dua for</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 5, ಸೂಕ್ತ: 114</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ ۖ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್, ನಮ್ಮ ಪ್ರಭೂ, ಆಕಾಶದಿಂದ ನಮಗೊಂದು ಊಟದ ಹರಿವಾಣವನ್ನು ಇಳಿಸು. ಅದು ನಮಗೂ ನಮ್ಮ ಹಿಂಗಾಮಿಗಳಿಗೂ ಮುಂಗಾಮಿಗಳಿಗೂ ಸಂತಸದ ಸಂದರ್ಭವಾಗಿಯೂ ನಿನ್ನ ಕಡೆಯಿಂದ ಒಂದು ದೃಷ್ಟಾಂತವಾಗಿಯೂ ಪರಿಣಮಿಸಲಿ.</div>
+            <div class="dua-english">O Allah, our Lord, send to us from heaven a tray of food that it may become a recurring festival to us, to the first of us and to the last of us, and that it may be a Sign from You. Provide for us and You are the best of providers.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">25.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನೂಂದಿಗೆ ಪ್ರತಿಜ್ಞೆ -1</span>
+                <span class="dua-title-en">(Pledge to Allah 1)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 6, ಸೂಕ್ತ: 79</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">إِنِّي وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيفًا ۖ وَمَا أَنَا مِنَ الْمُشْرِكِينَ</div>
+            <div class="dua-kannada">ನಾನು ಏಕನಿಷ್ಠೆಯಿಂದ ನನ್ನ ಮುಖವನ್ನು ಭೂಮಿ-ಆಕಾಶಗಳನ್ನು ಸೃಷ್ಟಿಸಿದವನ ಕಡೆಗೆ ತಿರುಗಿಸಿದೆನು. ನಾನು ಸರ್ವಥಾ ಅಲ್ಲಾಹನೊಂದಿಗೆ ಸಹಭಾಗಿಗಳನ್ನಾಗಿ ಮಾಡುವವರಲ್ಲಿ ಸೇರಿದವನಲ್ಲ</div>
+            <div class="dua-english">I have turned my face in exclusive loyalty and worship towards that Being Who has created the earth &#39;and the heavens and I am not at all of those who associate partners with Allah.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">26.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನೂಂದಿಗೆ ಪ್ರತಿಜ್ಞೆ -2</span>
+                <span class="dua-title-en">(Pledge to Allah 2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 6, ಸೂಕ್ತ: 162-163</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ   - لَا شَرِيكَ لَهُ ۖ وَبِذَٰلِكَ أُمِرْتُ وَأَنَا أَوَّلُ الْمُسْلِمِينَ</div>
+            <div class="dua-kannada">ಹೇಳಿರಿ- ನನ್ನ ನಮಾಝ್, ನನ್ನ ಸರ್ವ ಉಪಾಸನಾ ವಿಧಿಗಳು, ನನ್ನ ಜೀವನ ಮತ್ತು ನನ್ನ ಮರಣ ಎಲ್ಲವೂ ಯಾವ ಸಹಭಾಗಿಯೂ ಇಲ್ಲದ ಸರ್ವಲೋಕ ಪಾಲಕನಿಗಾಗಿದೆ- ಇದನ್ನೇ ನನಗೆ ಆದೇಶಿಸಲಾಗಿದೆ. ನಾನು ಆಜ್ಞಾನುಸರಣೆಯೊಂದಿಗೆ ಶಿರ ಬಾಗುವವರಲ್ಲಿ ಸರ್ವ ಪ್ರಥಮನಾಗಿರುತ್ತೇನೆ. ಹೇಳಿರಿ: ಅಲ್ಲಾಹನೇ ಸಕಲ ವಸ್ತುಗಳ ಪ್ರಭುವಾಗಿರುವಾಗ, ನಾನು ಅವನ ಹೊರತು ಇತರ ಪ್ರಭುವನ್ನರಸಬೇಕೇ?</div>
+            <div class="dua-english">And declare, &quot;My Salat and my rites of worship and my life and my death, all are for Allah, the Lord of the universe, Who has no partner with Him. This is what I have been enjoined, and I am the first to surrender to Him.&quot; Say, &quot;Should I seek another Lord beside Allah when He is the Lord of everything?</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">27.</span>
+                <span class="dua-title-kn">ನನ್ನನ್ನೂ ನನ್ನ ಸಹೋದರನನ್ನೂ ಕ್ಷಮಿಸು</span>
+                <span class="dua-title-en">(Forgiveness for us and our siblings)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 151</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">قَالَ رَبِّ اغْفِرْ لِي وَلِأَخِي وَأَدْخِلْنَا فِي رَحْمَتِكَ ۖ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ ನನ್ನನ್ನೂ ನನ್ನ ಸಹೋದರನನ್ನೂ ಕ್ಷಮಿಸು ಮತ್ತು ನಮ್ಮನ್ನು ನಿನ್ನ ಕರುಣೆಯಲ್ಲಿ ಸೇರಿಸು, ನೀನು ಅತ್ಯಂತ ಕೃಪಾಳುವಾಗಿರುವೆ</div>
+            <div class="dua-english">O Lord! Grant forgiveness upon me and my brother and admit us to Your Mercy, for You are most merciful of&#160;the&#160;merciful.&#39;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">28.</span>
+                <span class="dua-title-kn">ನಮ್ಮಿಂದ ಸಂಭವಿಸಿ ಹೋದ ಅಪರಾಧಗಳಿಗೆ ಕ್ಷಮೆಯ ದುವಾ. - 2</span>
+                <span class="dua-title-en">(Seeking Forgiveness  2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 23</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ನಮ್ಮ ಮೇಲೆ ಅನ್ಯಾಯವೆಸಗಿಕೊಂಡೆವು. ಈಗ ನೀನು ನಮ್ಮನ್ನು ಕ್ಷಮಿಸದಿದ್ದರೆ ಹಾಗೂ ನಮ್ಮ ಮೇಲೆ ಕೃಪೆದೋರದಿದ್ದರೆ ನಿಶ್ಚಯವಾಗಿಯೂ ನಾವು ನಷ್ಟ ಹೊಂದುವವರಲ್ಲಾಗುವೆವು</div>
+            <div class="dua-english">Our Lord! We have wronged ourselves. If You do not forgive us and do not have mercy on us, we shall surely be among the&#160;losers.&#39;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">29.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ಅಕ್ರಮಿಗಳ ಸಾಲಿಗೆ ಸೇರಿಸಬೇಡ.</span>
+                <span class="dua-title-en">(Do not make us amongst wrong doers)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 47</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا لَا تَجْعَلْنَا مَعَ الْقَوْمِ الظَّالِمِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮನ್ನು ಈ ಅಕ್ರಮಿಗಳೊಂದಿಗೆ ಸೇರಿಸಬೇಡ</div>
+            <div class="dua-english">O our Lord, do not include us in these wicked people.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">30.</span>
+                <span class="dua-title-kn">ನ್ಯಾಯ ಮತ್ತು ಸತ್ಯದ  ನಿರೀಕ್ಷೆಯಲ್ಲಿ</span>
+                <span class="dua-title-en">(Seeking Justice and Trut)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 89</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا افْتَحْ بَيْنَنَا وَ بَيْنَ قَوْمِنَا بِالْحَقِّ وَ اَنْتَ خَيْرُ الْفٰتِحِيْنَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮ ಮತ್ತು ನಮ್ಮ ಜನಾಂಗದ ನಡುವೆ ಸರಿಯಾಗಿ ತೀರ್ಮಾನ ಮಾಡಿಬಿಡು. ನೀನು ಅತ್ಯುತ್ತಮ ತೀರ್ಪು ನೀಡುವವನಾಗಿರುತ್ತೀ.</div>
+            <div class="dua-english">Our Lord! Do not cast us among the wrongdoing people</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">31.</span>
+                <span class="dua-title-kn">ಕಷ್ಟದ ಸಮಯದಲ್ಲಿ ಸಹಿಷ್ಣುತೆ ಯ ದುವಾ</span>
+                <span class="dua-title-en">(Tolerance During Difficult Times)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 126</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮಗೆ ಸಹನೆಯನ್ನು ಅನುಗ್ರಹಿಸು. ನಾವು ನಿನ್ನ ಮುಸ್ಲಿಮ(ವಿಧೇಯ ಆಜ್ಞಾಪಾಲಕ)ರಾಗಿರುವ ಸ್ಥಿತಿಯಲ್ಲಿ ನೀನು ನಮ್ಮನ್ನು ಈ ಲೋಕದಿಂದ ಎತ್ತಿಕೋ</div>
+            <div class="dua-english">Our Lord! Decide Thou between us and our people in truth, for Thou art the best to decide.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">32.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನ ಮಾರ್ಗದರ್ಶನವನ್ನು ಹುಡುಕುವುದು</span>
+                <span class="dua-title-en">(Seeking Guidance of Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 43</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">الْحَمْدُ لِلَّهِ الَّذِي هَدَانَا لِهَٰذَا وَمَا كُنَّا لِنَهْتَدِيَ لَوْلَا أَنْ هَدَانَا اللَّهُ ۖ لَقَدْ جَاءَتْ رُسُلُ رَبِّنَا بِالْحَقِّ ۖ وَنُودُوا أَنْ تِلْكُمُ الْجَنَّةُ أُورِثْتُمُوهَا بِمَا كُنْتُمْ تَعْمَلُونَ</div>
+            <div class="dua-kannada">ನಮಗೆ ಈ ಮಾರ್ಗವನ್ನು ತೋರಿಸಿ ಕೊಟ್ಟ ಅಲ್ಲಾಹನಿಗೇ ಸರ್ವಸ್ತುತಿಯು. ಅಲ್ಲಾಹನು ನಮಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡದಿರುತ್ತಿದ್ದರೆ, ನಾವು ಸನ್ಮಾರ್ಗ ಹೊಂದುತ್ತಿರಲಿಲ್ಲ. ನಮ್ಮ ಪ್ರಭುವಿನಿಂದ ಕಳುಹಿಸಲಾದ ಸಂದೇಶವಾಹಕರು ನಿಜಕ್ಕೂ ಸತ್ಯವನ್ನೇ ತೆಗೆದುಕೊಂಡು ಬಂದಿದ್ದರು&quot; ಎಂದು ಹೇಳುವರು. ಆಗ, &quot;ನೀವು ವಾರೀಸುದಾರರಾಗಿ ಮಾಡಲಾಗಿರುವ ಈ ಸ್ವರ್ಗವು ನೀವು ಮಾಡುತ್ತಿದ್ದ ಕರ್ಮಗಳ ಪ್ರತಿಫಲವಾಗಿ ನಿಮಗೆ ಸಿಕ್ಕಿದೆ&quot; ಎಂಬ ಧ್ವನಿ ಕೇಳಿ ಬರುವುದು.</div>
+            <div class="dua-english">Praise be to Allah, Who has guided us to this Way: by ourselves we would not have been able to find the Way, if Allah had not guided us. The Messengers sent by our Lord had really come, with the Truth. &quot; At that time a voice will be heard saying, &quot;This is the Paradise, of which you have been made heirs; it has been given to you</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">33.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ಕ್ಷಮಿಸು, ನಮ್ಮ ಮೇಲೆ  ಕರುಣಿಸು.</span>
+                <span class="dua-title-en">(forgive us Allah , and mercy upon us)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 7, ಸೂಕ್ತ: 155-156</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">أَنْتَ وَلِيُّنَا فَاغْفِرْ لَنَا وَارْحَمْنَا ۖ وَأَنْتَ خَيْرُ الْغَافِرِينَ  -   <br>         <br>وَاكْتُبْ لَنَا فِي هَٰذِهِ الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ إِنَّا هُدْنَا إِلَيْكَ ۚ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನೀನಿಚ್ಛಿಸುತ್ತಿದ್ದರೆ ಇವರನ್ನೂ ನನ್ನನ್ನೂ ಈ ಮೊದಲೇ ನಾಶಪಡಿಸಬಹುದಿತ್ತು. ನಮ್ಮ ಪೈಕಿ ಕೆಲವು ತಿಳಿಗೇಡಿಗಳು ಮಾಡಿದ್ದ ಅಪರಾಧಕ್ಕಾಗಿ ನಮ್ಮೆಲ್ಲರನ್ನೂ ನಾಶಗೊಳಿಸುವೆಯಾ? ಇದಂತು ನೀನು ಮಾಡಿದ ಒಂದು ಪರೀಕ್ಷೆಯಾಗಿತ್ತು. ನೀನು ಇದರ ಮೂಲಕ ನಿನಗಿಷ್ಟ ಬಂದವರನ್ನು ಪಥಭ್ರಷ್ಟಗೊಳಿಸುತ್ತೀ ಮತ್ತು ನಿನಗಿಷ್ಟ ಬಂದವರಿಗೆ ಸನ್ಮಾರ್ಗದರ್ಶನ ನೀಡುತ್ತೀ. ನೀನೇ ನಮ್ಮ ರಕ್ಷಕ ಮಿತ್ರನಾಗಿರುವೆ. ನಮ್ಮನ್ನು ಕ್ಷಮಿಸು. ನಮ್ಮ ಮೇಲೆ ಕೃಪೆದೋರು. ನೀನು ಕ್ಷಮಿಸುವವರಲ್ಲಿ ಅತಿ ಶ್ರೇಷ್ಠನಾಗಿರುವೆ.</div>
+            <div class="dua-english">My Lord, if Thou hadst willed, Thou could have destroyed them and me before this: wouldst Thou destroy rill of us for the offense committed by some foolish people from among us? This was a trial set by Thee, whereby Thou leads astray whom Thou wilt and guides whom Thou wilt. Thou alone art our Protector; so forgive us and have mercy on us for Thou art the best of all forgivers!</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">34.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನಲ್ಲಿ  ಭರವಸೆ</span>
+                <span class="dua-title-en">(Trust upon Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 9, ಸೂಕ್ತ: 129</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</div>
+            <div class="dua-kannada">ನನಗೆ ಅಲ್ಲಾಹನೇ ಸಾಕು. ಅವನ ಹೊರತು ಅನ್ಯ ಆರಾಧ್ಯನಿಲ್ಲ. ನಾನು ಅವನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿರಿಸಿದ್ದೇನೆ ಮತ್ತು ಅವನು &#39;ವಿಶ್ವ ಮಹಾ ಸಿಂಹಾಸನ&#39;ದ ಮಾಲಿಕನಾಗಿದ್ದಾನೆ.</div>
+            <div class="dua-english">O Prophet, &quot;Allah suffices me: there is no god but He: in Him have I put my trust: He is the Lord of the Great Throne.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">35.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ಅಕ್ರಮಿಗಳಿಗೆ ಪರೀಕ್ಷಾ ಸಾಧನವನ್ನಾಗಿ ಮಾಡದಿರು</span>
+                <span class="dua-title-en">(Save us from the Wrongdoig people)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 10, ಸೂಕ್ತ: 85-86</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلْقَوْمِ الظَّالِمِينَ  وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِينَ</div>
+            <div class="dua-kannada">ನಾವು ಅಲ್ಲಾಹನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿರಿಸಿದೆವು. ಓ ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮನ್ನು ಅಕ್ರಮಿಗಳಿಗೆ ಪರೀಕ್ಷಾ ಸಾಧನವನ್ನಾಗಿ ಮಾಡದಿರು-ಮತ್ತು ನಿನ್ನ ಕೃಪೆಯಿಂದ ನಮ್ಮನ್ನು ಸತ್ಯನಿಷೇಧಿಗಳಿಂದ ರಕ್ಷಿಸು.</div>
+            <div class="dua-english">We place our reliance on Allah. Our Lord! Do not make us a trial for the oppressors, and deliver us, through Your mercy, from the unbelievers.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">36.</span>
+                <span class="dua-title-kn">ಅರಿಯದ ವಿಷಯಗಳನ್ನು ಬೇಡದಿರುವುದು</span>
+                <span class="dua-title-en">(Refrain from asking things i have no knowledge)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 11, ಸೂಕ್ತ: 47</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ إِنِّي أَعُوذُ بِكَ أَنْ أَسْأَلَكَ مَا لَيْسَ لِي بِهِ عِلْمٌ ۖ وَإِلَّا تَغْفِرْ لِي وَتَرْحَمْنِي أَكُنْ مِنَ الْخَاسِرِينَ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನನಗೆ ತಿಳಿದಿಲ್ಲದಿರುವುದನ್ನು ನಿನ್ನಿಂದ ಬೇಡುವುದರ ಬಗ್ಗೆ ನಾನು ನಿನ್ನ ಅಭಯ ಯಾಚಿಸುತ್ತೇನೆ. ನೀನು ನನ್ನನ್ನು ಕ್ಷಮಿಸದಿದ್ದರೆ ಹಾಗೂ ನನ್ನ ಮೇಲೆ ದಯೆ ತೋರದಿದ್ದರೆ ನಾನು ನಷ್ಟ ಹೊಂದುವವರಲ್ಲಾಗುವೆನು.</div>
+            <div class="dua-english">My Lord, I seek Thy protection lest I should ask of Thee anything of which I have no knowledge. For if Thou forgivest me not for my presumption, and hast not mercy on me, I shall be totally ruined.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">37.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನಿಗೆ ಸಮರ್ಪಣೆ.</span>
+                <span class="dua-title-en">(Entrust myself to Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 11, ಸೂಕ್ತ: 56</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">إِنِّي تَوَكَّلْتُ عَلَى اللَّهِ رَبِّي وَرَبِّكُمْ ۚ مَا مِنْ دَابَّةٍ إِلَّا هُوَ آخِذٌ بِنَاصِيَتِهَا ۚ إِنَّ رَبِّي عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ</div>
+            <div class="dua-kannada">ನಾನು, ನನ್ನ ಪ್ರಭುವೂ ನಿಮ್ಮ ಪ್ರಭುವೂ ಆಗಿರುವ ಅಲ್ಲಾಹನ ಮೇಲೆ ಭರವಸೆ ಇಟ್ಟಿದ್ದೇನೆ. ಅವನ ಕೈಯಲ್ಲಿ ಅದರ ಜುಟ್ಟಿಲ್ಲದ ಯಾವ ಜೀವಿಯೂ ಇಲ್ಲ. ನಿಶ್ಚಯವಾಗಿಯೂ ನನ್ನ ಪ್ರಭು ನೇರಮಾರ್ಗದಲ್ಲಿದ್ದಾನೆ.</div>
+            <div class="dua-english">I have full trust in Allah Who is my Lord and your Lord as well. There is no living creature which He does not hold by its forelock. Indeed straight is the way of my Lord!</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">38.</span>
+                <span class="dua-title-kn">ಯಶಸ್ಸು ಅಲ್ಲಾಹನಿಂದ ಮಾತ್ರ.</span>
+                <span class="dua-title-en">(Success is only from Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 11, ಸೂಕ್ತ: 88</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ۚ عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ</div>
+            <div class="dua-kannada">ನಾನು ಮಾಡುವುದೆಲ್ಲವೂ ಅಲ್ಲಾಹನ ದಿವ್ಯಾನುಗ್ರಹದ ಆಧಾರದಲ್ಲಿದೆ. ನಾನು ಅವನ ಮೇಲೆಯೇ ಭರವಸೆಯಿರಿಸಿದ್ದೇನೆ ಮತ್ತು ಪ್ರತಿಯೊಂದು ವಿಷಯದಲ್ಲೂ ಅವನತ್ತಲೇ ವಾಲುತ್ತೇನೆ.</div>
+            <div class="dua-english">My  succour is only with Allah. In Him have i put my trust, and to Him do i always turn.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">39.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನೇ ಅತ್ಯುತ್ತಮ ರಕ್ಷಕ.</span>
+                <span class="dua-title-en">(Allah is the best Guardian)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 12, ಸೂಕ್ತ: 64</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">فَاللَّهُ خَيْرٌ حَافِظًا وَهُوَ أَرْحَمُ الرَّاحِمِينَ</div>
+            <div class="dua-kannada">ಅಲ್ಲಾಹನೇ ಅತ್ಯುತ್ತಮ ರಕ್ಷಕನು ಮತ್ತು ಅವನು ಎಲ್ಲರಿಗಿಂತಲೂ ಹೆಚ್ಚು ಕರುಣಾಳುವಾಗಿರುತ್ತಾನೆ</div>
+            <div class="dua-english">Allah is the best guardian, and He is the most merciful of the merciful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">40.</span>
+                <span class="dua-title-kn">ನಮ್ಮ ನೋವು ಮತ್ತು ದುಃಖವನ್ನು ಅಲ್ಲಾಹನಿಗೆ ಬಹಿರಂಗಪಡಿಸುವುದು</span>
+                <span class="dua-title-en">(Exposing our suffering and grief to Allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 12, ಸೂಕ್ತ: 86</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ وَأَعْلَمُ مِنَ اللَّهِ مَا لَا تَعْلَمُونَ</div>
+            <div class="dua-kannada">ನಾನು ನನ್ನ ತಲ್ಲಣ ಮತ್ತು ದುಃಖದ ಮೊರೆಯನ್ನು ಅಲ್ಲಾಹನ ಹೊರತು ಇನ್ನಾರೊಡನೆಯೂ ಇಡುವುದಿಲ್ಲ. ಅಲ್ಲಾಹನನ್ನು ನಾನು ತಿಳಿದುಕೊಂಡಂತೆ ನೀವು ತಿಳಿದಿಲ್ಲ.</div>
+            <div class="dua-english">I complain to Allah alone of my sorrow and grief. And I know from Allah what you do not know.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">41.</span>
+                <span class="dua-title-kn">ನೀತಿವಂತ ಜನರೊಂದಿಗೆ ನನ್ನನ್ನು ಓಗ್ಗೂಡಿಸು</span>
+                <span class="dua-title-en">(Unit me with Righteous Peoples)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 12, ಸೂಕ್ತ: 101</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ قَدْ آتَيْتَنِي مِنَ الْمُلْكِ وَعَلَّمْتَنِي مِنْ تَأْوِيلِ الْأَحَادِيثِ ۚ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنْتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನೀನು ನನಗೆ ಸಾಮ್ರಾಜ್ಯಾಧಿಕಾರವನ್ನು ದಯಪಾಲಿಸಿದೆ. ವಿಷಯಗಳ ಆಳವನ್ನರಿಯಲು ಕಲಿಸಿಕೊಟ್ಟೆ. ಓ ಆಕಾಶಗಳ ಮತ್ತು ಭೂಮಿಯ ನಿರ್ಮಾಪಕನೇ! ಇಹದಲ್ಲೂ ಪರದಲ್ಲೂ ನೀನೇ ನನ್ನ ರಕ್ಷಕ ಮಿತ್ರನು. ನನ್ನನ್ನು ಮುಸ್ಲಿಮನನ್ನಾಗಿ ಅಂತ್ಯಗೊಳಿಸು ಮತ್ತು ಅಂತಿಮವಾಗಿ ಸಜ್ಜನರೊಂದಿಗೆ ಸೇರಿಸು.</div>
+            <div class="dua-english">My Lord! You have bestowed dominion upon me and have taught me to comprehend the depths of things. O Creator of heavens and earth! You are my Guardian in this world and in the Hereafter. Cause me to die in submission to You, and join me, in the end, with the righteous.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">42.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನ ಮೇಲೆ ನಮ್ಮ ಭರವಸೆ</span>
+                <span class="dua-title-en">(Our trust on allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 12, ಸೂಕ್ತ: 67</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَعَلَيْهِ فَلْيَتَوَكَّلِ الْمُتَوَكِّلُونَ</div>
+            <div class="dua-kannada">ಆಜ್ಞಾಧಿಕಾರವು ಅವನ ಹೊರತು ಬೇರೆ ಯಾರಿಗೂ ಇಲ್ಲ. ನಾನು ಅವನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿರಿಸಿದೆ ಮತ್ತು ಯಾರು ಭರವಸೆಯನ್ನಿರಿಸುವುದಿದ್ದರೂ ಅವನ ಮೇಲೆಯೇ ಇರಿಸಲಿ</div>
+            <div class="dua-english">Allah`s command alone prevails. In Him have I put my trust and in Him should all those who have faith put their trust.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">43.</span>
+                <span class="dua-title-kn">ನಮಗೂ, ನಮ್ಮ ಮಾತಾಪಿತರಿಗೂ,  ಕ್ಷಮೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(Forgive me and my Parents)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 14, ಸೂಕ್ತ: 41</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನ ಪ್ರಾರ್ಥನೆಯನ್ನು ಸ್ವೀಕರಿಸು. ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನೂ ನನ್ನ ಮಾತಾಪಿತರನ್ನೂ ಸಕಲ ಸತ್ಯವಿಶ್ವಾಸಿಗಳನ್ನೂ ವಿಚಾರಣೆ ನಡೆಸಲ್ಪಡುವ ಆ ದಿನ ಕ್ಷಮಿಸಿ ಬಿಡು.</div>
+            <div class="dua-english">Our Lord! Forgive me and my parents and the believers on the Day when the reckoning will take place.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">44.</span>
+                <span class="dua-title-kn">ವಿಗ್ರಹಾರಾಧನೆಯಿಂದ ರಕ್ಷಣೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(Prayer for protection from idolatry.)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 14, ಸೂಕ್ತ: 35-36</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">وَإِذْ قَالَ إِبْرَاهِيمُ رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا وَاجْنُبْنِي وَبَنِيَّ أَنْ نَعْبُدَ الْأَصْنَامَ  -<br>رَبِّ إِنَّهُنَّ أَضْلَلْنَ كَثِيرًا مِنَ النَّاسِ ۖ فَمَنْ تَبِعَنِي فَإِنَّهُ مِنِّي ۖ وَمَنْ عَصَانِي فَإِنَّكَ غَفُورٌ رَحِيمٌ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ಈ ಪಟ್ಟಣ (ಅರ್ಥಾತ್ ಮಕ್ಕಾ)ವನ್ನು ಶಾಂತಿ ನಗರವನ್ನಾಗಿ ಮಾಡು ಮತ್ತು ನನ್ನನ್ನೂ ನನ್ನ ಸಂತತಿಯನ್ನೂ ವಿಗ್ರಹಾರಾಧನೆಯಿಂದ ರಕ್ಷಿಸು. ಓ ನನ್ನ ಪ್ರಭೂ, ಈ ವಿಗ್ರಹಗಳು ಅನೇಕರನ್ನು ದಾರಿಗೆಡಿಸಿವೆ. (ಇವು ನನ್ನ ಸಂತತಿಯನ್ನೂ ಪಥಭ್ರಷ್ಟಗೊಳಿಸಿಬಿಡಬಹುದು. ಆದುದರಿಂದ ಅವರ ಪೈಕಿ) ನನ್ನ ಪದ್ಧತಿಯಲ್ಲಿ ನಡೆಯುವವನು ನನ್ನವನು ಮತ್ತು ಯಾರಾದರೂ ನನ್ನದಕ್ಕೆ ವಿರುದ್ಧವಾದ ರೀತಿಯಲ್ಲಿ ನಡೆದರೆ, ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ಕ್ಷಮಾಶೀಲನೂ ಕರುಣಾನಿಧಿಯೂ ಆಗಿರುತ್ತಿ</div>
+            <div class="dua-english">“My Lord! Make this city ˹of Mecca˺ secure, and keep me and my children away from the worship of idols.My Lord! They have caused many people to go astray. So whoever follows me is with me, and whoever disobeys me—then surely You are ˹still˺ All-Forgiving, Most Merciful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">45.</span>
+                <span class="dua-title-kn">ಇಬ್ರಾಹಿಂ (ಅ.ಸ) ರವರ ದುವಾ</span>
+                <span class="dua-title-en">(Ibrahim (a) &#39;s Dua)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 14, ಸೂಕ್ತ: 37</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا إِنِّي أَسْكَنْتُ مِنْ ذُرِّيَّتِي بِوَادٍ غَيْرِ ذِي زَرْعٍ عِنْدَ بَيْتِكَ الْمُحَرَّمِ رَبَّنَا لِيُقِيمُوا الصَّلَاةَ فَاجْعَلْ أَفْئِدَةً مِنَ النَّاسِ تَهْوِي إِلَيْهِمْ وَارْزُقْهُمْ مِنَ الثَّمَرَاتِ لَعَلَّهُمْ يَشْكُرُونَ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನಾನು ನನ್ನ ಸಂತತಿಯ ಒಂದು ಭಾಗವನ್ನು ಒಂದು ಬಂಜರು ಕಣಿವೆಯಲ್ಲಿ ನಿನ್ನ ಸನ್ಮಾನ್ಯ ಗೃಹದ ಬಳಿ ತಂದು ನೆಲೆಗೊಳಿಸಿದ್ದೇನೆ. ಓ ನನ್ನ ಪ್ರಭೂ, ಇವರು ನಮಾಝನ್ನು ಸಂಸ್ಥಾಪಿಸಲೆಂದು ಹೀಗೆ ಮಾಡಿದ್ದೇನೆ. ಆದುದರಿಂದ ನೀನು ಜನಮನಗಳು ಇವರ ಕಡೆಗೆ ಒಲಿಯುವಂತೆ ಮಾಡು ಮತ್ತು ಇವರಿಗೆ ತಿನ್ನಲು ಫಲಗಳನ್ನು ನೀಡು. ಇವರು ಕೃತಜ್ಞರಾಗಲೂ ಬಹುದು</div>
+            <div class="dua-english">Lord! I have settled some of my descendants in a barren valley near Thy Sacred House. Lord! I have done this in the hope that they would establish Salat there. So turn the hearts of the people towards them, and provide fruits for their food. It is expected that they will become grateful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">46.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನಿಂದ ಏನೂ ಅಡಗಿರುವುದಿಲ್ಲ.</span>
+                <span class="dua-title-en">(Nothig is hidde from allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 14, ಸೂಕ್ತ: 38</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا إِنَّكَ تَعْلَمُ مَا نُخْفِي وَمَا نُعْلِنُ ۗ وَمَا يَخْفَىٰ عَلَى اللَّهِ مِنْ شَيْءٍ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನಾವು ಅಡಗಿಸುವುದನ್ನೂ ಬಹಿರಂಗಪಡಿಸುವುದನ್ನೂ ನೀನು ಬಲ್ಲವನಾಗಿರುತ್ತಿ ಮತ್ತು ನಿಜಕ್ಕೂ ಆಕಾಶಗಳಲ್ಲಾಗಲಿ ಭೂಮಿಯಲ್ಲಾಗಲಿ ಅಲ್ಲಾಹನಿಂದ ಏನೊಂದೂ ಅಡಗಿರುವುದಿಲ್ಲ.</div>
+            <div class="dua-english">Lord! Thou hast full knowledge of all that we hide and disclose.&quot; And the fact is that nothing in the earth and heavens is hidden from Allah.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">47.</span>
+                <span class="dua-title-kn">ಸತ್ಯವಿಶ್ವಾಸಿಗಳಿಗೆ  ಕ್ಷಮೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(Forgiveness For All belivers)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 14, ಸೂಕ್ತ: 39-41</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">الْحَمْدُ لِلَّهِ الَّذِي وَهَبَ لِي عَلَى الْكِبَرِ إِسْمَاعِيلَ وَإِسْحَاقَ ۚ إِنَّ رَبِّي لَسَمِيعُ الدُّعَاءِ  -<br>رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ  -<br>رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ</div>
+            <div class="dua-kannada">ಈ ವೃದ್ಧಾಪ್ಯದಲ್ಲಿ ನನಗೆ ಇಸ್ಮಾಈಲ್ ಮತ್ತು ಇಸ್‌ಹಾಕರಂತಹ ಪುತ್ರರನ್ನು ದಯಪಾಲಿಸಿದ ಅಲ್ಲಾಹನಿಗೆ ಕೃತಜ್ಞತೆ. ನಿಶ್ಚಯವಾಗಿಯೂ ನನ್ನ ಪ್ರಭು ಪ್ರಾರ್ಥನೆಯನ್ನು ಆಲಿಸುತ್ತಾನೆ.<br> ಓ ನನ್ನ ಪ್ರಭೂ, ನೀನು ನನ್ನನ್ನು ನಮಾಝ್ ಸಂಸ್ಥಾಪಿಸುವವನನ್ನಾಗಿ ಮಾಡು. ನನ್ನ ಸಂತತಿಯಿಂದಲೂ (ಈ ಕಾರ್ಯವೆಸಗುವವರನ್ನು ಎಬ್ಬಿಸು.)<br> ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನ ಪ್ರಾರ್ಥನೆಯನ್ನು ಸ್ವೀಕರಿಸು. ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನೂ ನನ್ನ ಮಾತಾಪಿತರನ್ನೂ ಸಕಲ ಸತ್ಯವಿಶ್ವಾಸಿಗಳನ್ನೂ ವಿಚಾರಣೆ ನಡೆಸಲ್ಪಡುವ ಆ ದಿನ ಕ್ಷಮಿಸಿ ಬಿಡು.</div>
+            <div class="dua-english">All praise be to Allah Who has given me sons like Ismail and Isaac in my old age. Indeed, my Lord hears all prayers. Lord! help make me establish Salat and from among my descendants (raise those who should do this work). Lord! grant my prayer. Lord! forgive me and my parents and the believers on the Day when reckoning will take place.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">48.</span>
+                <span class="dua-title-kn">ಪೂಶಕರಿಗೆ ದುವಾ</span>
+                <span class="dua-title-en">(Dua For parents.)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 17, ಸೂಕ್ತ: 24</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ಇವರು (  ಪೂಶಕರು  ) ನನ್ನನ್ನು ಚಿಕ್ಕಂದಿನಲ್ಲಿ ಪ್ರೀತಿ-ದಯೆಯಿಂದ ಸಾಕಿದಂತೆಯೇ ನೀನು ಅವರ ಮೇಲೆ ದಯೆತೋರು</div>
+            <div class="dua-english">Lord, show mercy to them as they nurtured me when I was small.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">49.</span>
+                <span class="dua-title-kn">ಯಾತ್ರೆಯ ದುವಾ. 2</span>
+                <span class="dua-title-en">(while entering / Existing a Town)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 17, ಸೂಕ್ತ: 80</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">وَقُلْ رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَلْ لِي مِنْ لَدُنْكَ سُلْطَانًا نَصِيرًا</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ! ನೀನು ನನ್ನನ್ನು ಎಲ್ಲಿಗೆ ಕೊಂಡೊಯ್ಯುವುದಿದ್ದರೂ ಸತ್ಯದೊಂದಿಗೇ ಒಯ್ಯು, ಎಲ್ಲಿಂದ ಹೊರಡಿಸುವುದಿದ್ದರೂ ಸತ್ಯ ಸಹಿತವೇ ಹೊರಡಿಸು ಮತ್ತು ನಿನ್ನ ಕಡೆಯಿಂದ ಒಂದು ಅಧಿಕಾರವನ್ನು ನನಗೆ ನೆರವಾಗಿಸು ಎಂದು ಪ್ರಾರ್ಥಿಸಿರಿ.</div>
+            <div class="dua-english">My Lord! Cause me to enter wherever it be, with Truth, and cause me to exit, wherever it be, with Truth, and support me with authority from Yourself.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">50.</span>
+                <span class="dua-title-kn">ವ್ಯವಹಾರವನ್ನು ಸುಗಮಗೊಳಿಸವ ದುವಾ - 1</span>
+                <span class="dua-title-en">(Bestow upon us Rahmath (Mercy))</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 18, ಸೂಕ್ತ: 10</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ! ನಮಗೆ ನಿನ್ನ ವಿಶಿಷ್ಟ ಕೃಪೆಯನ್ನು ದಯಪಾಲಿಸು ಮತ್ತು ನಮ್ಮ ವ್ಯವಹಾರವನ್ನು ಸುಗಮಗೊಳಿಸು</div>
+            <div class="dua-english">Our Lord! Grant us mercy from Yourself and provide for us rectitude in our affairs.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">51.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನಿಚ್ಛಿಸಿದಂತೆಯೇ  ಎಲ್ಲವೂ  ಆಗುತ್ತದೆ</span>
+                <span class="dua-title-en">(Allah&#39;s wills shall comes to power)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 18, ಸೂಕ್ತ: 39</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ</div>
+            <div class="dua-kannada">ಎಲ್ಲವೂ ಅಲ್ಲಾಹನಿಚ್ಛಿಸಿದಂತೆಯೇ ಆಗುತ್ತದೆ, ಅಲ್ಲಾಹನ ಹೊರತು ಇನ್ನಾವ ಶಕ್ತಿಯೂ ಇಲ್ಲ</div>
+            <div class="dua-english">Whatever Allah wills shall come to pass, for there is no power  save with Allah!`</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">52.</span>
+                <span class="dua-title-kn">ಸನ್ಮಾರ್ಗ ಪ್ರಾಪ್ತಿಗಾಗಿ ದುವಾ.</span>
+                <span class="dua-title-en">(Guide me to truth)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 18, ಸೂಕ್ತ: 24</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">عَسَىٰ أَنْ يَهْدِيَنِ رَبِّي لِأَقْرَبَ مِنْ هَٰذَا رَشَدًا</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭು ಈ ವಿಷಯದಲ್ಲಿ ಸತ್ಯಕ್ಕೆ ಸಮೀಪವಾದುದರ ಕಡೆಗೆ ನನಗೆ ಮಾರ್ಗದರ್ಶನ ಮಾಡುವನೆಂದು ನಾನು ನಿರೀಕ್ಷಿಸುತ್ತೇನೆಂದು ಹೇಳಿರಿ</div>
+            <div class="dua-english">I Expect my lord to guide me to what is nearer to rectitude than me</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">53.</span>
+                <span class="dua-title-kn">ಜ್ಞಾನ ಸಂಪಾದನೆಯ  ದುವಾ.</span>
+                <span class="dua-title-en">(Increase In Knowledge)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 20, ಸೂಕ್ತ: 114</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ زِدْنِي عِلْمًا</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ ನನಗೆ ಇನ್ನಷ್ಟು ಜ್ಞಾನ ದಯಪಾಲಿಸು`</div>
+            <div class="dua-english">My Lord! Increase me in knowledge.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">54.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನು ನಮ್ಮನ್ನು ಆಲಿಸು ಮತ್ತು  ವೀಕ್ಷಿಸುತ್ತಿದ್ದಾನೆ</span>
+                <span class="dua-title-en">(Allah is listening and Watching over us)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 20, ಸೂಕ್ತ: 45-46</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا إِنَّنَا نَخَافُ أَن يَفْرُطَ عَلَيْنَا أَوْ أَن يَطْغَى قَالَ لَا تَخَافَا إِنَّنِي مَعَكُمَا أَسْمَعُ وَأَرَى</div>
+            <div class="dua-kannada">ಓ ನಮ್ಮ ಪ್ರಭೂ, ಅವನು ನಮ್ಮ ಮೇಲೆ ಅತಿರೇಕವೆಸಗಬಹುದು. ನಮ್ಮ ಮೇಲೆ ಮುಗಿಬೀಳಬಹುದೆಂಬ ಆತಂಕ ನಮಗಿದೆ.` ಆಗ, `ಹೆದರಬೇಡಿರಿ, ನಾನು ನಿಮ್ಮ ಜೊತೆಗಿದ್ದೇನೆ. ಎಲ್ಲವನ್ನೂ ಆಲಿಸುತ್ತಿದ್ದೇನೆ ಮತ್ತು ವೀಕ್ಷಿಸುತ್ತಿದ್ದೇನೆ.</div>
+            <div class="dua-english">a Lord! We fear he may commit excesses against              us, or transgress all bounds.                                   He said: &#39;Have no fear. I am with you, hearing and seeing all.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">55.</span>
+                <span class="dua-title-kn">ಆತ್ಮವಿಶ್ವಾಸ ಮತ್ತು ಮಾತುಗಾರರು ಯ ದುವಾ</span>
+                <span class="dua-title-en">(Grant me confidence and eloquence)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 20, ಸೂಕ್ತ: 25-28</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">قَالَ رَبِّ اشْرَحْ لِي صَدْرِي   -   وَيَسِّرْ لِي أَمْرِي  وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي</div>
+            <div class="dua-kannada">`ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನ ಹೃದಯವನ್ನು ವಿಶಾಲಗೊಳಿಸು- ನನ್ನ ಕಾರ್ಯವನ್ನು ನನಗೆ ಸುಲಭಗೊಳಿಸು- ಜನರು ನನ್ನ ಮಾತನ್ನು ತಿಳಿಯುವಂತಾಗಲು ನನ್ನ ನಾಲಗೆಯ ತೊಡಕನ್ನು ನೀಗಿಸು ಮತ್ತು ನನಗಾಗಿ ನನ್ನದೇ ಕುಟುಂಬದಿಂದ ಒಬ್ಬ ಮಂತ್ರಿಯನ್ನು ನೇಮಿಸು. ನಾವು ನಿನ್ನ ಪಾವಿತ್ರ್ಯವನ್ನು</div>
+            <div class="dua-english">Lord, open my breast for me and make my task easy for me, and remove the impediment from my tongue so that people may understand my speech</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">56.</span>
+                <span class="dua-title-kn">ಪಶ್ತಾತಾಪ</span>
+                <span class="dua-title-en">(Repentance)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 21, ಸೂಕ್ತ: 87</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ</div>
+            <div class="dua-kannada">ನಿನ್ನ ಹೊರತು ಅನ್ಯ ದೇವನಿಲ್ಲ. ನೀನು ಪರಮ ಪಾವನನು ನಿಶ್ಚಯ ವಾಗಿಯೂ ನಾನು ಅಪರಾಧವೆಸಗಿದೆನು.</div>
+            <div class="dua-english">There is no god but You. Glory be to You! I have done wrong.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">57.</span>
+                <span class="dua-title-kn">ಅವಮಾನಿತರಾದಾಗ ಬೇಡುವ ದುವಾ.      when we are being Insulted</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 21, ಸೂಕ್ತ: 112</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ احْكُمْ بِالْحَقِّ ۗ وَرَبُّنَا الرَّحْمَٰنُ الْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ</div>
+            <div class="dua-kannada">“ಓ ನನ್ನ ಪ್ರಭೂ, ಸತ್ಯಸಹಿತ ತೀರ್ಮಾನಿಸಿ ಬಿಡು ಮತ್ತು ಜನರೇ, ನಮ್ಮ ದಯಾಮಯನಾದ ಪ್ರಭು ನೀವು ಸೃಷ್ಟಿಸುತ್ತಿರುವ ಮಾತುಗಳ ವಿರುದ್ಧ ನಮಗೆ ಸಹಾಯಾಧಾರ ವಾಗಿರುತ್ತಾನೆಂದು” ಹೇಳಿದರು.</div>
+            <div class="dua-english">O my Lord, pass Thy Judgment with the truth. And, O people, we trust in our Lord, the Merciful, to help us against the things you say.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">58.</span>
+                <span class="dua-title-kn">ಕಷ್ಟದ ಸಮಯದಲ್ಲಿ ದುವಾ</span>
+                <span class="dua-title-en">(At Times of hardship)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 21, ಸೂಕ್ತ: 83</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ</div>
+            <div class="dua-kannada">“ನನಗೆ ರೋಗ ತಗಲಿ ಹೋಗಿದೆ. ನೀನು ಕರುಣಾಳುಗಳಲ್ಲಿ ಅತ್ಯಂತ ಕರುಣಾಳು ಆಗಿರುತ್ತೀ”</div>
+            <div class="dua-english">I have been afflicted with the disease, and Thou art most Merciful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">59.</span>
+                <span class="dua-title-kn">ಆಲ್ಲಾನೇ ಅತ್ಯುತ್ತಮ ವಾರೀಸುದಾರ</span>
+                <span class="dua-title-en">(Allah is the best inheritor.)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 21, ಸೂಕ್ತ: 89</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ ನನ್ನನ್ನು ಏಕಾಂಗಿಯಾಗಿ ಬಿಟ್ಟು ಬಿಡಬೇಡ. ಅತ್ಯುತ್ತಮ ವಾರೀಸುದಾರ ನೀನೇ ಆಗಿರುತ್ತೀ”</div>
+            <div class="dua-english">O Lord, do not leave me childless though Thou alone art the best Inheritor</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">60.</span>
+                <span class="dua-title-kn">ಕ್ಷಮೆ ಮತ್ತು ಕರುಣೆಯ ಪ್ರಾರ್ಥನೆ.</span>
+                <span class="dua-title-en">(Prayer for forgiveness and mercy.)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 23, ಸೂಕ್ತ: 118</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ اغْفِرْ وَارْحَمْ وَأَنْتَ خَيْرُ الرَّاحِمِينَ</div>
+            <div class="dua-kannada">ಪೈಗಂಬರರೇ, ಹೇಳಿರಿ; “ನನ್ನೊಡೆಯಾ, ಕ್ಷಮಿಸು ಮತ್ತು ಕರುಣೆ ತೋರು; ನೀನು ಸಕಲ ಕರುಣಾಳುಗಳಿಗಿಂತಲೂ ಉತ್ತಮ ಕರುಣಾಮಯಿಯಾಗಿರುತ್ತೀ.”</div>
+            <div class="dua-english">My Lord, forgive us and have mercy on us, for You are the Best of those that&#160;are&#160;merciful.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">61.</span>
+                <span class="dua-title-kn">ಶೈತಾನರ ದುಷ್ಪ್ರೇರಣೆಗಳಿಂದ  ಅಭಯದ ಯಾಚನೆಯ  ದುವಾ</span>
+                <span class="dua-title-en">(refuge from whisperings of Devil (Shayatheen))</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 23, ಸೂಕ್ತ: 97-98</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ   وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ</div>
+            <div class="dua-kannada">ಮತ್ತು ಹೀಗೆ ಪ್ರಾರ್ಥಿಸಿರಿ, &quot;ನನ್ನ ಪ್ರಭೂ, ನಾನು ಶೈತಾನರ ದುಷ್ಪ್ರೇರಣೆಗಳಿಂದ ನಿನ್ನ ಅಭಯ ಯಾಚಿಸುತ್ತೇನೆ. ನನ್ನ ಪ್ರಭೂ, ಅವರು ನನ್ನ ಬಳಿ ಸುಳಿಯುವುದರಿಂದಲೂ ನಾನು ನಿನ್ನ ಅಭಯ ಯಾಚಿಸುತ್ತೇನೆ.</div>
+            <div class="dua-english">My Lord! I seek Your refuge from the suggestions of the evil ones; I even seek Your refuge, my Lord, lest they should approach me.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">62.</span>
+                <span class="dua-title-kn">Forgive and have Mercy Upon us  -    ಕ್ಷಮೆ ಮತ್ತು  ಕರುಣೆಯ ದುವಾ</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 23, ಸೂಕ್ತ: 109</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا آمَنَّا فَاغْفِرْ لَنَا وَارْحَمْنَا وَأَنْتَ خَيْرُ الرَّاحِمِينَ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ ನಾವು ವಿಶ್ವಾಸವಿರಿಸಿದೆವು. ನಮ್ಮನ್ನು ಕ್ಷಮಿಸಿ ಬಿಡು, ನಮ್ಮ ಮೇಲೆ ದಯೆ ತೋರು, ನೀನು ಅತ್ಯುತ್ತಮ ಕರುಣಾನಿಧಿ ಆಗಿರುತ್ತೀ</div>
+            <div class="dua-english">Our Lord, we believe, so forgive us, and have mercy on us, for You are the Best of those that are merciful,&#39;</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">63.</span>
+                <span class="dua-title-kn">ಪ್ರವಾದಿ ನೂಹ್ ರ (ಅ.ಸ)  ಹಡಗು  ತಂಗಿದಾಗ ಬೇಡಿದ  ದುಆ</span>
+                <span class="dua-title-en">(Moosa (A)&#39;s Prayer)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 23, ಸೂಕ್ತ: 29</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَّبِّ أَنزِلْنِي مُنزَلًا مُّبَارَكًا وَأَنتَ خَيْرُ الْمُنزِلِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನು ಸಮೃದ್ಧಿಯಿಂದ ಕೂಡಿದ ಸ್ಥಳದಲ್ಲಿ ಇಳಿಸು, ನೀನು ಅತ್ಯುತ್ತಮ ಸ್ಥಾನವೊದಗಿಸುವವನಾಗಿರುವೆ</div>
+            <div class="dua-english">My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">64.</span>
+                <span class="dua-title-kn">ಅಕ್ರಮಿಗಳಲ್ಲಿ ಸೇರಿಸಬೇಡ.</span>
+                <span class="dua-title-en">(Dont place me amoung wrongdoing People)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 23, ಸೂಕ್ತ: 94</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ فَلَا تَجْعَلْنِي فِي الْقَوْمِ الظَّالِمِينَ</div>
+            <div class="dua-kannada">ಓ ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನು ಈ ಅಕ್ರಮಿಗಳಲ್ಲಿ ಸೇರಿಸಬೇಡ.”</div>
+            <div class="dua-english">O my Lord, do not include me among these unjust people.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">65.</span>
+                <span class="dua-title-kn">ನರಕದ ಯಾತನೆಯಿಂದ ರಕ್ಷಣೆಯ ದುವಾ</span>
+                <span class="dua-title-en">(Protect us from the torment of hell)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 25, ಸೂಕ್ತ: 65-66</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا اصْرِفْ عَنَّا عَذَابَ جَهَنَّمَ ۖ إِنَّ عَذَابَهَا كَانَ غَرَامًا   إِنَّهَا سَاءَتْ مُسْتَقَرًّا وَمُقَامًا</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮನ್ನು ನರಕದ ಯಾತನೆಯಿಂದ ರಕ್ಷಿಸು. ಅದರ ಯಾತನೆಯಂತೂ ಪ್ರಾಣಾಂತಿಕವಾಗಿದೆ.  ಅದು ಅತ್ಯಂತ ನಿಕೃಷ್ಟ ನೆಲೆ ಮತ್ತು ಸ್ಥಾನವಾಗಿರುತ್ತದೆ.</div>
+            <div class="dua-english">Our Lord! Ward off from us the chastisement of Hell, for its chastisement is one that clings;  Verily it is a wretched abode and restingplace.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">66.</span>
+                <span class="dua-title-kn">ಸಂತೃಪ್ತ  ಕುಟುಂಬಕ್ಕಾಗಿ ದುವಾ</span>
+                <span class="dua-title-en">(Grant me a bilssful family)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 25, ಸೂಕ್ತ: 74</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮ ಪತ್ನಿಯರಿಂದಲೂ ಮಕ್ಕಳಿಂದಲೂ ನಮ್ಮ ಕಣ್ಮನಗಳನ್ನು ತಣಿಸು ಮತ್ತು ನಮ್ಮನ್ನು ಧರ್ಮನಿಷ್ಠರ ನಾಯಕರಾಗಿ ಮಾಡು</div>
+            <div class="dua-english">Our Lord! Grant us that our spouses and our offspring be a joy to our eyes,1 and do make us the leaders of the God-fearing.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">67.</span>
+                <span class="dua-title-kn">ನನ್ನನ್ನೂ ದುರಾಚಾರಗಳಿಂದ ರಕ್ಷಿಸು.   Proteck us from wicked people</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 26, ಸೂಕ್ತ: 169</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ نَجِّنِي وَأَهْلِي مِمَّا يَعْمَلُونَ</div>
+            <div class="dua-kannada">ಪ್ರಭೂ, ನನ್ನನ್ನೂ ನನ್ನ ಕುಟುಂಬವನ್ನೂ ಇವರು ಮಾಡುತ್ತಿರುವ ದುರಾಚಾರಗಳಿಂದ ರಕ್ಷಿಸು.</div>
+            <div class="dua-english">My Lord, deliver me and my people from their wicked deeds.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">68.</span>
+                <span class="dua-title-kn">ನನ್ನನ್ನು ಸಜ್ಜನರೊಂದಿಗೆ ಸೇರಿಸು.</span>
+                <span class="dua-title-en">(Join me with the righteous people)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 26, ಸೂಕ್ತ: 83-89</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ هَبْ لِي حُكْمًا وَأَلْحِقْنِي بِالصَّالِحِينَ  -   وَاجْعَلْ لِي لِسَانَ صِدْقٍ فِي الْآخِرِينَ  - وَاجْعَلْنِي مِنْ وَرَثَةِ جَنَّةِ النَّعِيمِ   -  وَاغْفِرْ لِأَبِي إِنَّهُ كَانَ مِنَ الضَّالِّينَ  -   وَلَا تُخْزِنِي يَوْمَ يُبْعَثُونَيَوْمَ لَا يَنْفَعُ مَالٌ وَلَا بَنُونَ  -   إِلَّا مَنْ أَتَى اللَّهَ بِقَلْبٍ سَلِيمٍ</div>
+            <div class="dua-kannada">“ನನ್ನ ಪ್ರಭೂ, ನನಗೆ ‘ಹುಕ್ಮ್’ (ನಿರ್ಧಾರ ಶಕ್ತಿ) ನೀಡು ಮತ್ತು ನನ್ನನ್ನು ಸಜ್ಜನರೊಂದಿಗೆ ಸೇರಿಸು. ಮುಂದಿನ ಪೀಳಿಗೆಗಳಲ್ಲಿ ನನಗೆ ಸತ್ಕೀರ್ತಿಯನ್ನು ದಯಪಾಲಿಸು- ಮತ್ತು ಸಂಪತ್ ಭರಿತವಾದ ಸ್ವರ್ಗದ ಉತ್ತರಾಧಿಕಾರಿಗಳಲ್ಲಿ ನನ್ನನ್ನು ಸೇರಿಸು- ನನ್ನ ತಂದೆಗೆ ಕ್ಷಮೆ ನೀಡು. ನಿಜಕ್ಕೂ ಅವರು ಪಥಭ್ರಷ್ಟರಲ್ಲಾಗಿದ್ದಾರೆ- ಎಲ್ಲರೂ ಜೀವಂತಗೊಳಿಸಿ ಎಬ್ಬಿಸಲ್ಪಡುವ ಆ ದಿನ ನನ್ನನ್ನು ಅವಮಾನಿಸದಿರು ಅಂದು ಸೊತ್ತಾಗಲಿ, ಸಂತತಿಗಳಾಗಲಿ ಸ್ವಲ್ಪವೂ ಫಲಕಾರಿಯಾಗಲಾರವು. ನಿಷ್ಕಳಂಕ ಹೃದಯದೊಂದಿಗೆ ಅಲ್ಲಾಹನ ಸನ್ನಿಧಿಯಲ್ಲಿ ಹಾಜರಾಗುವವನ ಹೊರತು.”</div>
+            <div class="dua-english">My Lord, bestow upon me knowledge and wisdom and join me with the righteous, and grant me true renown among posterity, and include me among the inheritors of the blissful Garden, and forgive my father, for indeed he is from among those who have strayed, and do not disgrace me on the Day when everybody will be raised back to life, when neither wealth will avail anybody, nor children, except that one should appear before Allah with a sound heart.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">69.</span>
+                <span class="dua-title-kn">ಮಾತಾಪಿತರ ಮೇಲೆ ಮಾಡಿದಂತಹ ಉಪಕಾರಕ್ಕಾಗಿ ನಾನು ಕೃತಜ್ಞತೆ .</span>
+                <span class="dua-title-en">(Being Thankful to Allah , Parents and to do Righteousness)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 27, ಸೂಕ್ತ: 19</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ</div>
+            <div class="dua-kannada">“ನನ್ನ ಪ್ರಭೂ, ನೀನು ನನ್ನ ಮೇಲೂ ನನ್ನ ಮಾತಾಪಿತರ ಮೇಲೂ ಮಾಡಿದಂತಹ ಉಪಕಾರಕ್ಕಾಗಿ ನಾನು ಕೃತಜ್ಞತೆ ತೋರಿಸುತ್ತಿರುವಂತೆಯೂ ನೀನು ಮೆಚ್ಚುವಂತಹ ಸತ್ಕರ್ಮವೆಸಗುವಂತೆಯೂ ನನ್ನನ್ನು ನಿಯಂತ್ರಿಸಿಡು. ನಿನ್ನ ಕೃಪೆಯಿಂದ ನನ್ನನ್ನು ನಿನ್ನ ಸಜ್ಜನ ದಾಸರಲ್ಲಿ ಸೇರಿಸು.”</div>
+            <div class="dua-english">O My Lord, restrain me so that I may render thanks to Thee for Thy favors which Thou hast bestowed upon the and my parents, and (enable me) to do such good works as may please Thee; and admit me, by Thy mercy, among Thy righteous servants.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">70.</span>
+                <span class="dua-title-kn">ಅಪೇಕ್ಷಯ  ದುವಾ</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 28, ಸೂಕ್ತ: 24</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ</div>
+            <div class="dua-kannada">‘ಪ್ರಭೂ, ನೀನು ನನ್ನ ಮೇಲೆ ಯಾವ ಹಿತವನ್ನಿಳಿಸಿದರೂ ನಾನು ಅದರ ಅಪೇಕ್ಷಕನಾಗಿದ್ದೇನೆ`</div>
+            <div class="dua-english">My Lord, I am truly in great need of any good that You might send down to me.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">71.</span>
+                <span class="dua-title-kn">ಅಪರಾಧಿಂದ ನನ್ನನ್ನು ಕ್ಷಮಿಸು. 1</span>
+                <span class="dua-title-en">(Forgive me from the culprit&#39;s  1)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 28, ಸೂಕ್ತ: 16</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ إِنِّي ظَلَمْتُ نَفْسِي فَاغْفِرْ لِي فَغَفَرَ لَهُ ۚ إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ  -</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನನ್ನ ಮೇಲೆ ನಾನೇ ಅಕ್ರಮವೆಸಗಿ ಬಿಟ್ಟೆ. ನನ್ನನ್ನು ಕ್ಷಮಿಸು</div>
+            <div class="dua-english">O my Lord, I have sinned against myself, so forgive me.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">72.</span>
+                <span class="dua-title-kn">ಅಪರಾಧಿಂದ  ನನ್ನನ್ನು ಕ್ಷಮಿಸು. 2</span>
+                <span class="dua-title-en">(Forgive me from the culprit&#39;s  2)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 28, ಸೂಕ್ತ: 17</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ بِمَا أَنْعَمْتَ عَلَيَّ فَلَنْ أَكُونَ ظَهِيرًا لِلْمُجْرِمِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನೀನು ನನ್ನ ಮೇಲೆ ಈ ಉಪಕಾರವೆಸಗಿರುವೆ.  ಇನ್ನು ಮುಂದೆ ನಾನೆಂದೂ ಅಪರಾಧಿಗಳ ಸಹಾಯಕನಾಗಲಾರೆ.</div>
+            <div class="dua-english">So, Allah forgave him: He is the All-Forgiving, the All-Merciful. Moses promised, &quot;O my Lord, after this favor that You have shown me, I shall never again be a helper of the criminals.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">73.</span>
+                <span class="dua-title-kn">ಅಪರಾಧಿಂದ ನನ್ನನ್ನು ಕ್ಷಮಿಸು. 3</span>
+                <span class="dua-title-en">(Forgive me from the culprit&#39;s  3)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 28, ಸೂಕ್ತ: 21</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ نَجِّنِي مِنَ الْقَوْمِ الظَّالِمِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನು ಅಕ್ರಮಿಗಳಿಂದ ರಕ್ಷಿಸು</div>
+            <div class="dua-english">O my Lord, save me from the wicked people.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">74.</span>
+                <span class="dua-title-kn">ಕಿಡಿಗೇಡಿಗಳ ವಿರುದ್ಧ ಸಹಾಯ</span>
+                <span class="dua-title-en">(Help me against themischief makers)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 29, ಸೂಕ್ತ: 30</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ انْصُرْنِي عَلَى الْقَوْمِ الْمُفْسِدِينَ</div>
+            <div class="dua-kannada">“ನನ್ನ ಪ್ರಭೂ, ಈ ಕಿಡಿಗೇಡಿಗಳ ವಿರುದ್ಧ ನನಗೆ ಸಹಾಯ ನೀಡು”</div>
+            <div class="dua-english">O my Lord, help me against these mischief makers.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">75.</span>
+                <span class="dua-title-kn">ಸ್ತುತಿಸ್ತೋತ್ರಗಳು  ಅಲ್ಲಾಹನಿಗೇಯೇ ಮೀಸಲು</span>
+                <span class="dua-title-en">(Glorify and praise Alah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 30, ಸೂಕ್ತ: 17-19</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">فَسُبْحَانَ اللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ  - <br>وَلَهُ الْحَمْدُ فِي السَّمَاوَاتِ وَالْأَرْضِ وَعَشِيًّا وَحِينَ تُظْهِرُونَ -  <br>يُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَيُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَيُحْيِي الْأَرْضَ بَعْدَ مَوْتِهَا ۚ وَكَذَٰلِكَ تُخْرَجُونَ</div>
+            <div class="dua-kannada">ಸಂಧ್ಯಾಕಾಲ ಬಂದಾಗಲೂ ಪ್ರಾತಃಕಾಲವಾದಾಗಲೂ ಅಲ್ಲಾಹನ ಗುಣಗಾನ ಮಾಡಿರಿ. ಭೂಮಿ-ಆಕಾಶಗಳಲ್ಲಿ ಸ್ತುತಿಸ್ತೋತ್ರಗಳು ಅವನಿಗೇ ಮೀಸಲು ಮತ್ತು ಮೂರನೆಯ ಜಾವದಲ್ಲೂ ನಿಮಗೆ ‘ಝುಹ್ರ್’ ಸಮಯ ಬಂದಾಗಲೂ (ಅವನ ಗುಣಗಾನ ಮಾಡಿರಿ). ಅವನು ಸಜೀವಿಯನ್ನು ನಿರ್ಜೀವಿಯಿಂದ ಹೊರತೆಗೆಯುತ್ತಾನೆ, ನಿರ್ಜೀವಿಯನ್ನು ಸಜೀವಿಯಿಂದ ಹೊರ ತೆಗೆಯುತ್ತಾನೆ ಮತ್ತು ಭೂಮಿಗೆ ಅದರ ಮರಣದ ಬಳಿಕ ಮತ್ತೆ ಜೀವದಾನ ಮಾಡುತ್ತಾನೆ. ಇದೇ ರೀತಿಯಲ್ಲಿ ನೀವು (ಮರಣಾವಸ್ಥೆಯಿಂದ) ಹೊರ ತೆಗೆಯಲ್ಪಡುವಿರಿ.</div>
+            <div class="dua-english">Glorify Allah in the evening and in the morning: praise is due to Him alone in the heavens and the earth; and (glorify Him) in the afternoon and at the declining of the day. He brings out the living from the dead and the dead from the living, and gives life to the earth after its death. Likewise, you too, shall be taken out (of the state of death).</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">76.</span>
+                <span class="dua-title-kn">ನಮ್ಮ ದುಃಖಗಳನ್ನು ದೂರ ಮಾಡಿದ ಅಲ್ಲಾಹನಿಗೆ ಸ್ತುತಿ.</span>
+                <span class="dua-title-en">(Praise allah who removed our sorrows)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 35, ಸೂಕ್ತ: 34-35</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">الْحَمْدُ لِلَّهِ الَّذِي أَذْهَبَ عَنَّا الْحَزَنَ ۖ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ -   <br> الَّذِي أَحَلَّنَا دَارَ الْمُقَامَةِ مِنْ فَضْلِهِ لَا يَمَسُّنَا فِيهَا نَصَبٌ وَلَا يَمَسُّنَا فِيهَا لُغُوبٌ</div>
+            <div class="dua-kannada">ನಮ್ಮಿಂದ ದುಃಖವನ್ನು ದೂರೀಕರಿಸಿದ ಅಲ್ಲಾಹನಿಗೆ ಕೃತಜ್ಞತೆಗಳು.  ಖಂಡಿತವಾಗಿಯೂ ನಮ್ಮ ಪ್ರಭು ಮಹಾ ಕ್ಷಮಾದಾನಿಯೂ ಗುಣಗ್ರಾಹಿಯೂ ಆಗಿರುತ್ತಾನೆ.  <br><br>ಅವನು ತನ್ನ ಅನುಗ್ರಹದಿಂದ ನಮ್ಮನ್ನು ಶಾಶ್ವತ ನಿವಾಸದಲ್ಲಿ ತಂದಿರಿಸಿದನು.   ಇನ್ನು ಇಲ್ಲಿ ನಮಗೆ ಯಾವುದೇ ಸಂಕಷ್ಟವೂ ಇಲ್ಲ, ಆಯಾಸವೂ ಉಂಟಾಗುವುದಿಲ್ಲ&#39; ಎನ್ನುವರು.</div>
+            <div class="dua-english">All praise be to Allah Who, despite my old age, has given me Ishmael and Isaac. Surely my Lord hears&#160;all&#160;prayers, My Lord! Enable me and my offspring to establish Prayer, and do accept, our Lord, this&#160;prayer&#160;of&#160;mine. Our Lord! Forgive me and my parents and the believers on the Day when the reckoning will&#160;take&#160;place.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">77.</span>
+                <span class="dua-title-kn">ಸುನೀತ ಸಂತತಿಯ ಪ್ರಾರ್ಥನೆ. 1</span>
+                <span class="dua-title-en">(Asking Dua For Grant a child -1)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 37, ಸೂಕ್ತ: 100</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ هَبْ لِي مِنَ الصَّالِحِينَ</div>
+            <div class="dua-kannada">ಪ್ರಭೂ! ನನಗೆ ಸಜ್ಜನನಾದ  ಒಬ್ಬ ಮಗನನ್ನು ದಯಪಾಲಿಸು</div>
+            <div class="dua-english">Lord, grant me a righteous son.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">78.</span>
+                <span class="dua-title-kn">ಸಕಲ ಪ್ರಶಂಸೆಗಳೂ ಅಲ್ಲಾಹನಿಗೇ ಮೀಸಲು.</span>
+                <span class="dua-title-en">(Glorified is your Lord)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 37, ಸೂಕ್ತ: 180-182</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ  <br>   وَسَلَامٌ عَلَى الْمُرْسَلِينَ    <br>  وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
+            <div class="dua-kannada">ನಿಮ್ಮ ಪ್ರಭು, ಗೌರವಾನ್ವಿತ ಪ್ರಭು, ಇವರು ಸೃಷ್ಟಿಸುತ್ತಿರುವ ಎಲ್ಲಾ ಆರೋಪಗಳಿಂದ ಮುಕ್ತನಾಗಿರುವ ಪರಮ ಪಾವನನು. ಸಂದೇಶವಾಹಕರುಗಳ ಮೇಲೆ ಸಲಾಮ್ (ಶುಭಾಶಯ) ಇದೆ. ಸಕಲ ಪ್ರಶಂಸೆಗಳೂ ಸರ್ವಲೋಕಗಳ ಪಾಲಕ ಪ್ರಭುವಾದ ಅಲ್ಲಾಹನಿಗೇ ಮೀಸಲು.</div>
+            <div class="dua-english">Glorified is your Lord, Lord of Honour, (and free) from all that they attribute to Him., and peace on the Messengers, and all praise is only for Allah, Lord of the Universe.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">79.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನು ನಮ್ಮ ವ್ಯವಹಾರಗಳನ್ನು ತೀರ್ಮಾನಿಸುವನು</span>
+                <span class="dua-title-en">(Allah will be the Judge for our affairs)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 39, ಸೂಕ್ತ: 46</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">قُلِ اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِي مَا كَانُوا فِيهِ يَخْتَلِفُونَ</div>
+            <div class="dua-kannada">ಹೇಳಿರಿ- &quot;ಅಲ್ಲಾಹ್! ಭೂಮಿ-ಆಕಾಶಗಳ ಸೃಷ್ಟಿಕರ್ತನೇ! ಪ್ರತ್ಯಕ್ಷ- ಪರೋಕ್ಷಗಳ ಜ್ಞಾನಿಯೇ, ನಿನ್ನ ದಾಸರು ಭಿನ್ನಾಭಿಪ್ರಾಯ ತಾಳುತ್ತಾ ಬಂದಿರುವ ವಿಷಯದಲ್ಲಿ ಅವರ ನಡುವೆ ನೀನೇ ತೀರ್ಮಾನ ಮಾಡಲಿರುವೆ.</div>
+            <div class="dua-english">O Allah—Originator of the heavens and the earth, Knower of the seen and unseen! You will judge between Your servants regarding their differences.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">80.</span>
+                <span class="dua-title-kn">ನನಗೆ ಅಲ್ಲಾಹನೇ ಸಾಕು.</span>
+                <span class="dua-title-en">(Allah is suffient for me)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 39, ಸೂಕ್ತ: 38</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">حَسْبِيَ اللَّهُ ۖ عَلَيْهِ يَتَوَكَّلُ الْمُتَوَكِّلُونَ</div>
+            <div class="dua-kannada">ನನಗೆ ಅಲ್ಲಾಹನೇ ಸಾಕು. ಭರವಸೆ ಇಡುವವರು ಅವನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿಡುತ್ತಾರೆ</div>
+            <div class="dua-english">Allah is enough for me. In Him do those who trust place their trust.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">81.</span>
+                <span class="dua-title-kn">ನಮ್ಮ ವ್ಯವಹಾರಗಳನ್ನು ಅಲ್ಲಾಹನಿಗೆ ಒಪ್ಪಿಸುವುದು</span>
+                <span class="dua-title-en">(Entrusting our affairs to allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 40, ಸೂಕ್ತ: 44</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">وَأُفَوِّضُ أَمْرِي إِلَى اللَّهِ ۚ إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ</div>
+            <div class="dua-kannada">ನಾನು ನನ್ನ ವಿಷಯವನ್ನು ಅಲ್ಲಾಹನಿಗೆ ಒಪ್ಪಿಸಿ ಬಿಡುತ್ತೇನೆ. ಅವನು ತನ್ನ ದಾಸರ ಮೇಲ್ವಿಚಾರಕನಾಗಿರುತ್ತಾನೆ.</div>
+            <div class="dua-english">“Allah ˹alone˺ is sufficient ˹as an aid˺ for us and ˹He˺ is the best Protector.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">82.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ನರಕಾಗ್ನಿಯಿಂದ ರಕ್ಷಿಸು</span>
+                <span class="dua-title-en">(Forgive and protect us from the hell fire)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 40, ಸೂಕ್ತ: 7</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">الَّذِينَ يَحْمِلُونَ الْعَرْشَ وَمَنْ حَوْلَهُ يُسَبِّحُونَ بِحَمْدِ رَبِّهِمْ وَيُؤْمِنُونَ بِهِ وَيَسْتَغْفِرُونَ لِلَّذِينَ آمَنُوا رَبَّنَا وَسِعْتَ كُلَّ شَيْءٍ رَحْمَةً وَعِلْمًا فَاغْفِرْ لِلَّذِينَ تَابُوا وَاتَّبَعُوا سَبِيلَكَ وَقِهِمْ عَذَابَ الْجَحِيمِ</div>
+            <div class="dua-kannada">ಪ್ರಭೂ, ನೀನು ನಿನ್ನ ಕೃಪೆ ಮತ್ತು ನಿನ್ನ ಜ್ಞಾನದೊಂದಿಗೆ ಸಕಲ ವಸ್ತುಗಳನ್ನು ಆವರಿಸಿಕೊಂಡಿರುವೆ.  ಆದುದರಿಂದ ಪಶ್ಚಾತ್ತಾಪಪಟ್ಟವರನ್ನು ಹಾಗೂ ನಿನ್ನ ಮಾರ್ಗವನ್ನು ಸ್ವೀಕರಿಸಿಕೊಂಡವರನ್ನು ಕ್ಷಮಿಸು   ಮತ್ತು ನರಕ ಯಾತನೆಯಿಂದ ರಕ್ಷಿಸು.  ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ಅವರಿಗೆ ವಾಗ್ದಾನ ಮಾಡಿರುವ ಶಾಶ್ವತವಾದ ಸ್ವರ್ಗೋದ್ಯಾನಗಳಲ್ಲಿ ಅವರನ್ನು ಪ್ರವೇಶಗೊಳಿಸು.   ಅವರ ಪಿತರ, ಪತ್ನಿಯರ ಮತ್ತು ಮಕ್ಕಳ ಪೈಕಿ ಸಜ್ಜನರಾದವರನ್ನು ಕೂಡಾ ಅವರೊಂದಿಗೆ ಅಲ್ಲಿಗೆ ತಲುಪಿಸು. ನಿಶ್ಚಯವಾಗಿಯೂ   ನೀನು ಪ್ರಬಲನೂ ಯುಕ್ತಿವಂತನೂ ಆಗಿರುವೆ. ಅವರನ್ನು ಕೇಡುಗಳಿಂದ ರಕ್ಷಿಸು.   ನೀನು ಆ ದಿನ ಯಾರನ್ನು ಕೇಡುಗಳಿಂದ   ರಕ್ಷಿಸಿದೆಯೋ ಅವನ ಮೇಲೆ ನೀನು ಮಹಾ ಕೃಪೆಗೈದೆ. ಇದುವೇ ಮಹಾ ಯಶಸ್ಸಾಗಿದೆ.</div>
+            <div class="dua-english">The angels who bear the Divine Throne and those who stand around it, all are glorifying their Lord with His praises. They affirm faith in Him, and ask forgiveness for the believers. They say, &quot;Our Lord, You embrace everything in Your mercy and knowledge, so forgive and save from the torment of Hell.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">83.</span>
+                <span class="dua-title-kn">ನರಕ ಯಾತನೆಯಿಂದ ರಕ್ಷಿಸು</span>
+                <span class="dua-title-en">(Save  us from hell and Grant us Janna)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 40, ಸೂಕ್ತ: 8-9</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا وَأَدْخِلْهُمْ جَنَّاتِ عَدْنٍ الَّتِي وَعَدْتَهُمْ وَمَنْ صَلَحَ مِنْ آبَائِهِمْ وَأَزْوَاجِهِمْ وَذُرِّيَّاتِهِمْ ۚ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ -   <br>وَقِهِمُ السَّيِّئَاتِ ۚ وَمَنْ تَقِ السَّيِّئَاتِ يَوْمَئِذٍ فَقَدْ رَحِمْتَهُ ۚ وَذَٰلِكَ هُوَ الْفَوْزُ الْعَظِيمُ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ನಿನ್ನ ಕೃಪೆ ಮತ್ತು ನಿನ್ನ ಜ್ಞಾನದೊಂದಿಗೆ ಸಕಲ ವಸ್ತುಗಳನ್ನು ಆವರಿಸಿಕೊಂಡಿರುವೆ.  ಆದುದರಿಂದ ಪಶ್ಚಾತ್ತಾಪಪಟ್ಟವರನ್ನು ಹಾಗೂ ನಿನ್ನ ಮಾರ್ಗವನ್ನು ಸ್ವೀಕರಿಸಿಕೊಂಡವರನ್ನು ಕ್ಷಮಿಸು  ಮತ್ತು ನರಕ ಯಾತನೆಯಿಂದ ರಕ್ಷಿಸು. ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ಅವರಿಗೆ ವಾಗ್ದಾನ ಮಾಡಿರುವ ಶಾಶ್ವತವಾದ ಸ್ವರ್ಗೋದ್ಯಾನಗಳಲ್ಲಿ ಅವರನ್ನು ಪ್ರವೇಶಗೊಳಿಸು. ಅವರ ಪಿತರ, ಪತ್ನಿಯರ ಮತ್ತು ಮಕ್ಕಳ ಪೈಕಿ ಸಜ್ಜನರಾದವರನ್ನು ಕೂಡಾ ಅವರೊಂದಿಗೆ ಅಲ್ಲಿಗೆ ತಲುಪಿಸು. ನಿಶ್ಚಯವಾಗಿಯೂ ನೀನು ಪ್ರಬಲನೂ ಯುಕ್ತಿವಂತನೂ ಆಗಿರುವೆ. ಅವರನ್ನು ಕೇಡುಗಳಿಂದ ರಕ್ಷಿಸು. ನೀನು ಆ ದಿನ ಯಾರನ್ನು ಕೇಡುಗಳಿಂದ ರಕ್ಷಿಸಿದೆಯೋ ಅವನ ಮೇಲೆ ನೀನು ಮಹಾ ಕೃಪೆಗೈದೆ. ಇದುವೇ ಮಹಾ ಯಶಸ್ಸಾಗಿದೆ.</div>
+            <div class="dua-english">Our Lord, to the eternal Gardens which You have promised them,and (admit therein also) of their parents and wives and children who are righteous. You are surely All-Mighty, All-Wise. And deliver them from evils, for whomever You delivered from evils on the Day of Resurrection, to him You showed great mercy. This is indeed the supreme success.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">84.</span>
+                <span class="dua-title-kn">ಅಲ್ಲಾಹನ ಮೇಲೆ ನಂಬಿಕೆ ಇಟ್ಟು ಪಶ್ಚಾತ್ತಾಪ ಪಡಿರಿ</span>
+                <span class="dua-title-en">(Trust in allah and repent to him)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 42, ಸೂಕ್ತ: 10</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">ذَٰلِكُمُ اللَّهُ رَبِّي عَلَيْهِ تَوَكَّلْتُ وَإِلَيْهِ أُنِيبُ</div>
+            <div class="dua-kannada">ಆ ಅಲ್ಲಾಹನೇ ನನ್ನ ಪ್ರಭು. ನಾನು ಅವನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿರಿಸಿದೆ ಮತ್ತು ಅವನ ಕಡೆಗೇ ನಾನು ಮರಳುತ್ತೇನೆ.</div>
+            <div class="dua-english">Such is Allah, my Lord; in Him I have put all my trust and to Him I always turn in devotion.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">85.</span>
+                <span class="dua-title-kn">ಆಹಾರ</span>
+                <span class="dua-title-en">(Rizq (sustenance come from allah))</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 42, ಸೂಕ್ತ: 19</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَنْ يَشَاءُ ۖ وَهُوَ الْقَوِيُّ الْعَزِيزُ</div>
+            <div class="dua-kannada">ಅಲ್ಲಾಹನು ತನ್ನ ದಾಸರ ಮೇಲೆ ಅತ್ಯಂತ ಕರುಣೆಯುಳ್ಳವನು. ತಾನಿಚ್ಛಿಸಿದ್ದನ್ನು ( ಆಹಾರ  ) ತಾನಿಚ್ಛಿಸಿದವರಿಗೆ ದಯಪಾಲಿಸುತ್ತಾನೆ. ಅವನು ಮಹಾಬಲಿಷ್ಠನೂ ಪ್ರಬಲನೂ ಆಗಿರುತ್ತಾನೆ.</div>
+            <div class="dua-english">Allah is Ever Kind to His servants. He provides ˹abundantly˺ to whoever He wills. And He is the All-Powerful, Almighty.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">86.</span>
+                <span class="dua-title-kn">Before travelling on a vehicle/animal    ವಾಹನ/ಪ್ರಾಣಿಯ ಮೇಲೆ ಪ್ರಯಾಣಿಸುವ ಮೊದಲು</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 43, ಸೂಕ್ತ: 13-14</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ  -   وَإِنَّا إِلَىٰ رَبِّنَا لَمُنْقَلِبُونَ</div>
+            <div class="dua-kannada">ಇವುಗಳನ್ನು ನಮಗಾಗಿ ನಿಯಂತ್ರಿಸಿಕೊಟ್ಟವನು ಪರಮ ಪಾವನನು. ಅನ್ಯಥಾ ನಾವು ಇವುಗಳನ್ನು ಹತೋಟಿಗೆ ತರಲು ಶಕ್ತರಾಗಿರಲಿಲ್ಲ - ಮತ್ತು ನಮಗೊಂದು ದಿನ ನಮ್ಮ ಪ್ರಭುವಿನ ಕಡೆಗೇ ಮರಳಲಿಕ್ಕಿದೆ.</div>
+            <div class="dua-english">Glory be to Him Who has subjected this to Us whereas we did not have the strength to subdue it. It is to our Lord that we shall eventually return.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">87.</span>
+                <span class="dua-title-kn">ಅನುಗ್ರಹಗಳ ಬಗ್ಗೆ ಕೃತಜ್ಞತೆ</span>
+                <span class="dua-title-en">(Being Grateful to allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 46, ಸೂಕ್ತ: 46</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَىٰ وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي ۖ إِنِّي تُبْتُ إِلَيْكَ وَإِنِّي مِنَ الْمُسْلِمِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ,  ನೀನು ನನಗೂ ನನ್ನ ಮಾತಾಪಿತರಿಗೂ ಕರುಣಿಸಿರುವ ಅನುಗ್ರಹಗಳ ಬಗ್ಗೆ ಕೃತಜ್ಞತೆ ಸಲ್ಲಿಸುವ ಹಾಗೂ ನೀನು ಸಂತೃಪ್ತನಾಗುವಂತಹ ಸತ್ಕರ್ಮಗಳನ್ನು ಮಾಡುವ ಸೌಭಾಗ್ಯವನ್ನು ನನಗೆ ನೀಡು ಮತ್ತು ನನ್ನ ಮಕ್ಕಳನ್ನೂ ಸಜ್ಜನರಾಗಿ ಮಾಡಿ ನನಗೆ ಸುಖ ನೀಡು. ನಾನು ನಿನ್ನ ಸನ್ನಿಧಿಯಲ್ಲಿ ಪಶ್ಚಾತ್ತಾಪ ಪಡುತ್ತೇನೆ ಮತ್ತು ಖಂಡಿತ ವಾಗಿಯೂ ನಾನು ಶರಣಾಗತ (ಮುಸ್ಲಿಮ್) ದಾಸರಲ್ಲಾಗಿರುತ್ತೇನೆ&quot; ಎಂದನು.</div>
+            <div class="dua-english">“My Lord, dispose me that I may give thanks for the bounty that You have bestowed upon me and my parents, and dispose me that I may do righteous deeds that would please You, and also make my descendants righteous. I repent to You, and I am one of those who surrender themselves to You.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">88.</span>
+                <span class="dua-title-kn">ನನ್ನನ್ನು ಮತ್ತು ನನ್ನ ಸಹೋದರನನ್ನು ಕ್ಷಮಿಸು.</span>
+                <span class="dua-title-en">(Forgive Me and my Brother)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 59, ಸೂಕ್ತ: 10</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلَا تَجْعَلْ فِي قُلُوبِنَا غِلًّا لِلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَءُوفٌ رَحِيمٌ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮನ್ನೂ ನಮಗಿಂತ ಮುಂಚೆ ಸತ್ಯವಿಶ್ವಾಸ ಸ್ವೀಕಾರ ಮಾಡಿದ್ದ ನಮ್ಮೆಲ್ಲ ಸಹೋದರರನ್ನೂ ಕ್ಷಮಿಸಿ ಬಿಡು ಮತ್ತು ನಮ್ಮ ಮನಗಳಲ್ಲಿ ಸತ್ಯವಿಶ್ವಾಸಿಗಳ ಬಗ್ಗೆ ಯಾವುದೇ ಹಗೆತನವನ್ನಿರಿಸದಿರು. ನಮ್ಮ ಪ್ರಭೂ, ನೀನು ಮಹಾ ವಾತ್ಸಲ್ಯಪೂರ್ಣನೂ ಕರುಣಾಳುವೂ ಆಗಿರುವೆ.</div>
+            <div class="dua-english">“Lord, forgive us and our brethren who have preceded us in faith, and do not put in our hearts any rancour towards those who believe. Lord, You are the Most Tender, the Most Compassionate.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">89.</span>
+                <span class="dua-title-kn">ಸುರ ಅಲ್ ಹಷರ್  Sura Al Hashr</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 59, ಸೂಕ್ತ: 22-24</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَٰنُ الرَّحِيمُ  - <br> هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ  - <br> هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ</div>
+            <div class="dua-kannada">ಅವನೇ ಅಲ್ಲಾಹ್  ಅವನ ಹೊರತು ಬೇರಾವ ಆರಾಧ್ಯನೂ ಇಲ್ಲ. ಅಗೋಚರವಾದ ಮತ್ತು ಗೋಚರವಾಗಿರುವ ಎಲ್ಲವನ್ನೂ ಬಲ್ಲವನು. ಅವನೇ ಪರಮ ದಯಾಮಯನೂ ಕರುಣಾನಿಧಿಯೂ ಆಗಿರುತ್ತಾನೆ. ಅವನೇ ಅಲ್ಲಾಹ್ ಅವನ ಹೊರತು ಬೇರಾವ ಆರಾಧ್ಯನೂ ಇಲ್ಲ. ಅವನು ಸಾಮ್ರಾಟನು, ಪರಮ ಪಾವನನು, ಸಾದ್ಯಂತ ಮಂಗಲಮಯನು, ಶಾಂತಿದಾತನು, ಸಂರಕ್ಷಕನು, ಪ್ರಬಲನು, ತನ್ನ ಆಜ್ಞೆಯನ್ನು ಶಕ್ತಿಯಿಂದ ಅನುಷ್ಠಾನಿಸಿಬಿಡುವವನು, ಸದಾ ಸರ್ವೋನ್ನತನಾಗಿಯೇ ಇರುವವನು, ಜನರು ಮಾಡುತ್ತಿರುವ ಸಹಭಾಗಿತ್ವದಿಂದ ಅಲ್ಲಾಹನು ಪರಿಶುದ್ಧನು. ಸೃಷ್ಟಿಯ ಯೋಜನೆ ಮಾಡುವವನೂ ಅದನ್ನು ಜಾರಿಗೊಳಿಸುವವನೂ ಅದರಂತೆ ರೂಪ ಕೊಡುವವನೂ ಅಲ್ಲಾಹನೇ. ಅವನಿಗೆ ಅತ್ಯುತ್ತಮ ನಾಮಗಳಿವೆ. ಭೂಮಿ-ಆಕಾಶಗಳಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು ವಸ್ತುವೂ ಅವನನ್ನು ಜಪಿಸುತ್ತಿದೆ   ಮತ್ತು ಅವನು ಪ್ರಬಲನೂ ಯುಕ್ತಿಪೂರ್ಣನೂ ಆಗಿರುತ್ತಾನೆ.</div>
+            <div class="dua-english">He is Allah besides Whom there is no god. He is the Knower of the unseen and the seen. He is the Compassionate and the Merciful. He is Allah, besides Whom there is no god. He is the Sovereign, the Holy, the Source of safety, the Giver of peace, the Guardian, the All-Mighty, the Enforcer of His decrees, and the ever Supreme. Exalted is Allah alone Who is the Planner of Creation,its Enforcer and its Fashioner. His are the excellent names. Whatever is there in the heavens and the earth glorifies Him. and He is the All-Mighty and the All-Wise</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">90.</span>
+                <span class="dua-title-kn">ನಮಗೆ ಅಲ್ಲಾಹನ ಸನ್ನಿಧಿಗೇ  ಮರಳಲಿಕ್ಕಿದೆ.</span>
+                <span class="dua-title-en">(Our final Return is to allah)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 60, ಸೂಕ್ತ: 4</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಾವು ನಿನ್ನ ಮೇಲೆಯೇ ಭರವಸೆಯನ್ನಿರಿಸಿದೆವು, ನಿನ್ನ ಕಡೆಗೇ ನಾವು ವಾಲಿದೆವು ಮತ್ತು ನಿನ್ನ ಸನ್ನಿಧಿಗೇ ನಮಗೆ ಮರಳಲಿಕ್ಕಿದೆ.</div>
+            <div class="dua-english">O our Lord, in you alone have we put our trust and to You alone have we turned and to You we shall return finally.</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">91.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ಸತ್ಯನಿಷೇಧಿಗಳ ಪರೀಕ್ಷಾ ಸಾಧನವಾಗಿ ಮಾಡಿ ಬಿಡಬೇಡ</span>
+                <span class="dua-title-en">(Do not  make a trial to the disbelievers)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 60, ಸೂಕ್ತ: 5</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلَّذِينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَا ۖ إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮನ್ನು ಸತ್ಯನಿಷೇಧಿಗಳ ಪಾಲಿಗೆ ಪರೀಕ್ಷಾ ಸಾಧನವಾಗಿ ಮಾಡಿ ಬಿಡಬೇಡ ಮತ್ತು ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮ ತಪ್ಪುಗಳನ್ನು ಕ್ಷಮಿಸು, ನಿಸ್ಸಂದೇಹವಾಗಿಯೂ ನೀನೇ ಪ್ರಬಲನೂ ಯುಕ್ತಿಪೂರ್ಣನೂ ಆಗಿರುತ್ತೀ.&#39;</div>
+            <div class="dua-english">O our Lord: make us not a test and trial for those who have disbelieved, and O our Lord, pardon us our errors. You indeed are the All-Mighty, the All-Wise.”</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">92.</span>
+                <span class="dua-title-kn">ನಮ್ಮನ್ನು ಕ್ಷಮಿಸು  ನಮ್ಮ ಜ್ಯೋತಿಯನ್ನು  ಪರಿಪೂರ್ಣಗೊಳಿಸಿ  Forgive us and make us Perfect</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 66, ಸೂಕ್ತ: 8</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبَّنَا أَتْمِمْ لَنَا نُورَنَا وَاغْفِرْ لَنَا ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</div>
+            <div class="dua-kannada">ನಮ್ಮ ಪ್ರಭೂ, ನಮ್ಮ ಜ್ಯೋತಿಯನ್ನು ನಮಗಾಗಿ ಪರಿಪೂರ್ಣಗೊಳಿಸಿಬಿಡು ಮತ್ತು ನಮ್ಮನ್ನು ಕ್ಷಮಿಸು, ನೀನು ಸಕಲ ವಿಷಯಗಳ ಸಾಮರ್ಥ್ಯವಿರುವವನಾಗಿರುತ್ತಿ&#39;</div>
+            <div class="dua-english">Our Lord, perfect for us our light and forgive us. Surely You have power over everything</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">93.</span>
+                <span class="dua-title-kn">ಅಕ್ರಮಿ ಜನಾಂಗದಿಂದ ಅಭಯ ಯಾಚನೆ</span>
+                <span class="dua-title-en">(deliver me from the iniquitous people)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 66, ಸೂಕ್ತ: 11</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ ابْنِ لِي عِنْدَكَ بَيْتًا فِي الْجَنَّةِ وَنَجِّنِي مِنْ فِرْعَوْنَ وَعَمَلِهِ وَنَجِّنِي مِنَ الْقَوْمِ الظَّالِمِينَ</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನನಗಾಗಿ ನಿನ್ನ ಸ್ವರ್ಗದಲ್ಲೊಂದು ಭವನವನ್ನು ನಿರ್ಮಿಸಿಕೊಡು ಮತ್ತು ನನ್ನನ್ನು ಫಿರ್‍ಔನನಿಂದಲೂ ಅವನ ಕರ್ಮಗಳಿಂದಲೂ ರಕ್ಷಿಸು ಮತ್ತು ಅಕ್ರಮಿ ಜನಾಂಗದಿಂದ ನನ್ನನ್ನು ಪಾರುಗೊಳಿಸು</div>
+            <div class="dua-english">My Lord, build for me, in Your Presence, a house in Paradise, and deliver me from the pharaoh and his misdeeds; and deliver me from the iniquitous people</div>
+          </div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">94.</span>
+                <span class="dua-title-kn">ಸರ್ವ  ಸತ್ಯವಿಶ್ವಾಸಿಗಳಗೂ ಕ್ಷಮೆಯ ದುವಾ.</span>
+                <span class="dua-title-en">(forgiveness dua for all believers.)</span>
+              </div>
+              <div class="dua-ref">ಅಧ್ಯಾಯ: 71, ಸೂಕ್ತ: 28</div>
+            </div>
+            <div class="dua-arabic" dir="rtl">رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ وَلَا تَزِدِ الظَّالِمِينَ إِلَّا تَبَارًا</div>
+            <div class="dua-kannada">ನನ್ನ ಪ್ರಭೂ, ನನ್ನನ್ನೂ, ನನ್ನ ಮಾತಾಪಿತರನ್ನೂ, ಸತ್ಯವಿಶ್ವಾಸಿಯಾಗಿ ನನ್ನ ಮನೆಗೆ ಪ್ರವೇಶಿಸಿದ ಪ್ರತಿಯೊಬ್ಬನನ್ನು ಮತ್ತು ಎಲ್ಲ ಸತ್ಯವಿಶ್ವಾಸಿ ಸ್ತ್ರೀ ಪುರುಷರನ್ನು ಕ್ಷಮಿಸಿಬಿಡು ಮತ್ತು ಅಕ್ರಮಿಗಳಿಗೆ ವಿನಾಶದ ಹೊರತು ಇನ್ನೇನನ್ನೂ ವೃದ್ಧಿಸಬೇಡ.&#39;</div>
+            <div class="dua-english">My Lord, forgive me and my parents, and whoever enters my house as a believer, and forgive all believers, both men and women, and do not increase the wrong-doers in anything except perdition.”</div>
           </div>
         </div>
       </div>
@@ -2160,18 +3437,14 @@
         <div class="prayers-section-title">Hadeeth Duas</div>
         <p class="prayers-section-subtitle">Supplications narrated in the Prophetic traditions</p>
         <div class="verses" id="hadeeth-verses">
-          <div class="verse-parent">
-            <div class="row" id="hadeeth-dua-no-1">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">1</div>
-              </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا, وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಎಲ್ಲ ಕರ್ಮಗಳ ಅಂತಿಮ ಪರಿಣಾಮವನ್ನು ಅತ್ಯುತ್ತಮಗೊಳಿಸು, ಇಹಲೋಕದ ಅವಮಾನ ಹಾಗೂ ಪರಲೋಕದ ಶಿಕ್ಷೆಯಿಂದ ನಮ್ಮನ್ನು ರಕ್ಷಿಸು</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">1.</span>
               </div>
             </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا, وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಎಲ್ಲ ಕರ್ಮಗಳ ಅಂತಿಮ ಪರಿಣಾಮವನ್ನು ಅತ್ಯುತ್ತಮಗೊಳಿಸು, ಇಹಲೋಕದ ಅವಮಾನ ಹಾಗೂ ಪರಲೋಕದ ಶಿಕ್ಷೆಯಿಂದ ನಮ್ಮನ್ನು ರಕ್ಷಿಸು</div>
           </div>
         </div>
       </div>
@@ -2183,60 +3456,44 @@
 
         <div class="verses" id="qatam-verses">
 
-          <div class="verse-parent">
-            <div class="row" id="dua-no-1">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">1</div>
-              </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا, وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಎಲ್ಲ ಕರ್ಮಗಳ ಅಂತಿಮ ಪರಿಣಾಮವನ್ನು ಅತ್ಯುತ್ತಮಗೊಳಿಸು, ಇಹಲೋಕದ ಅವಮಾನ ಹಾಗೂ ಪರಲೋಕದ ಶಿಕ್ಷೆಯಿಂದ ನಮ್ಮನ್ನು ರಕ್ಷಿಸು</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">1.</span>
               </div>
             </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا, وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಎಲ್ಲ ಕರ್ಮಗಳ ಅಂತಿಮ ಪರಿಣಾಮವನ್ನು ಅತ್ಯುತ್ತಮಗೊಳಿಸು, ಇಹಲೋಕದ ಅವಮಾನ ಹಾಗೂ ಪರಲೋಕದ ಶಿಕ್ಷೆಯಿಂದ ನಮ್ಮನ್ನು ರಕ್ಷಿಸು</div>
           </div>
 
-          <div class="verse-parent">
-            <div class="row" id="dua-no-2">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">2</div>
-              </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ إِنَّا نَسْأَلُكَ مُوجِباتِ رَحْمَتِكَ, وَعَزَائِمَ مَغْفِرَتِكَ, وَالسَّلامَةَ مِنْ كُلِّ إِثمٍ, وَالغَنِيمَةَ مِنْ كُلِّ بِرٍّ, وَالفَوْزَ بِالجَنَّةِ, وَالنَّجَاةَ مِنَ النَّارِ</span><span class="ayah-period-1">٢</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನಾವು ನಿನ್ನೊಡನೆ ನಿನ್ನ ಅನುಗ್ರಹದ ಕಾರಣಗಳನ್ನೂ, ನಿನ್ನ ಕ್ಷಮೆಯ ಶಿಫಾರಸ್ಸನ್ನೂ, ಸಕಲ ಪಾಪಗಳಿಂದ ರಕ್ಷಣೆಯನ್ನೂ ಅಪೇಕ್ಷಿಸುತ್ತೇವೆ. ಸಕಲ ಒಳಿತುಗಳನ್ನು ಅನುಗ್ರಹ ಎಂದು ಭಾವಿಸುವ ಸ್ಫೂರ್ತಿಯನ್ನೂ, ಸ್ವರ್ಗ ಪ್ರಾಪ್ತಿಯನ್ನೂ, ನರಕದಿಂದ ಮುಕ್ತಿಯನ್ನೂ ಅಪೇಕ್ಷಿಸುತ್ತೇವೆ.</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">2.</span>
               </div>
             </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ إِنَّا نَسْأَلُكَ مُوجِباتِ رَحْمَتِكَ, وَعَزَائِمَ مَغْفِرَتِكَ, وَالسَّلامَةَ مِنْ كُلِّ إِثمٍ, وَالغَنِيمَةَ مِنْ كُلِّ بِرٍّ, وَالفَوْزَ بِالجَنَّةِ, وَالنَّجَاةَ مِنَ النَّارِ</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್! ನಾವು ನಿನ್ನೊಡನೆ ನಿನ್ನ ಅನುಗ್ರಹದ ಕಾರಣಗಳನ್ನೂ, ನಿನ್ನ ಕ್ಷಮೆಯ ಶಿಫಾರಸ್ಸನ್ನೂ, ಸಕಲ ಪಾಪಗಳಿಂದ ರಕ್ಷಣೆಯನ್ನೂ ಅಪೇಕ್ಷಿಸುತ್ತೇವೆ. ಸಕಲ ಒಳಿತುಗಳನ್ನು ಅನುಗ್ರಹ ಎಂದು ಭಾವಿಸುವ ಸ್ಫೂರ್ತಿಯನ್ನೂ, ಸ್ವರ್ಗ ಪ್ರಾಪ್ತಿಯನ್ನೂ, ನರಕದಿಂದ ಮುಕ್ತಿಯನ್ನೂ ಅಪೇಕ್ಷಿಸುತ್ತೇವೆ.</div>
           </div>
 
-          <div class="verse-parent">
-            <div class="row" id="dua-no-3">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">3</div>
-              </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ اقْسِمْ لَنَا مِنْ خَشْيَتِكَ مَا يَحُولُ بَيْنَنَا وَبَيْنَ مَعَاصِيكَ, وَمِنْ طَاعَتِكَ مَا تُبَلِّغُنَا بِهِ جَنَّتَكَ, وَمِنَ الْيَقِينِ مَا تُهَوِّنُ بِهِ عَلَيْنَا مُصِيبَاتِ الدُّنْيَا, وَمَتِّعْنَا بِأَسْمَاعِنَا وَأَبْصَارِنَا وَقُوَّتِنَا مَا أَحْيَيْتَنَا وَاجْعَلْهُ الْوَارِثَ مِنَّا, وَاجْعَلْ ثَأْرَنَا عَلَى مَنْ ظَلَمَنَا, وَانْصُرْنَا عَلَى مَنْ عَادَانَا, وَلاَ تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا وَلاَ تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا, وَلاَ مَبْلَغَ عِلْمِنَا وَلاَ تُسَلِّطْ عَلَيْنَا مَنْ لاَ يَرْحَمُنَا</span><span class="ayah-period-1">٣</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಮತ್ತು ಅಪರಾಧಗಳ ಮಧ್ಯೆ ಮರೆಯಾಗುವಂತೆ ನೀನು ನಮಗೆ ನಿನ್ನ ಅನುಸರಣೆಯನ್ನು ದಯಪಾಲಿಸು. ನಮ್ಮನ್ನು ನಿನ್ನ ಅನುಗ್ರಹದೆಡೆಗೆ ತಲುಪಿಸುವ ನಿನ್ನ ಭಯ-ಭಕ್ತಿಯನ್ನು ದಯಪಾಲಿಸು. ಲೌಕಿಕ ನಷ್ಟವನ್ನು ಕ್ಷುಲ್ಲಕವಾಗಿ ಕಾಣುವಂತೆ ಧೃಢ ವಿಶ್ವಾಸವನ್ನು ನಮಗೆ ದಯಪಾಲಿಸು. ನೀನು ನಮ್ಮನ್ನು ಬದುಕಿಸುವ ತನಕ ನಮಗೆ ನಮ್ಮ ಶ್ರವಣ, ದೃಷ್ಟಿ ಮತ್ತು ದೈಹಿಕ ಶಕ್ತಿಗಳಿಂದ ಪ್ರಯೋಜನ ಪಡೆಯುವ ಅವಕಾಶ ಒದಗಿಸು. ಈ ಒಳಿತನ್ನೇ ನಮ್ಮ ನಂತರವೂ ಜಾರಿಯಲ್ಲಿಡು. ನಮ್ಮ ಮೇಲೆ ಅನ್ಯಾಯ ಮಾಡುವವರಿಗೆ ನೀನೆ ನಮ್ಮ ವತಿಯಿಂದ ಪ್ರತೀಕಾರವೆಸಗು. ನಮ್ಮನ್ನು ದ್ವೇಷಿಸುವವರ ಮೇಲೆ ನಮಗೆ ಮೇಲುಗೈ ದಯಪಾಲಿಸು. ಲೋಕವನ್ನು ನಮ್ಮ ಪರಮೋದ್ದೇಶವಾಗಿಸಬೇಡ. ಲೋಕವನ್ನೇ ನಮ್ಮ ವಿದ್ಯೆ-ಬುದ್ಧಿಯ ಗುರಿಯಾಗಿಸಬೇಡ. ಕರುಣೆ ಇಲ್ಲದವರನ್ನು ನಮ್ಮ ಮೇಲೆ ಹೇರಬೇಡ.</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">3.</span>
               </div>
             </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ اقْسِمْ لَنَا مِنْ خَشْيَتِكَ مَا يَحُولُ بَيْنَنَا وَبَيْنَ مَعَاصِيكَ, وَمِنْ طَاعَتِكَ مَا تُبَلِّغُنَا بِهِ جَنَّتَكَ, وَمِنَ الْيَقِينِ مَا تُهَوِّنُ بِهِ عَلَيْنَا مُصِيبَاتِ الدُّنْيَا, وَمَتِّعْنَا بِأَسْمَاعِنَا وَأَبْصَارِنَا وَقُوَّتِنَا مَا أَحْيَيْتَنَا وَاجْعَلْهُ الْوَارِثَ مِنَّا, وَاجْعَلْ ثَأْرَنَا عَلَى مَنْ ظَلَمَنَا, وَانْصُرْنَا عَلَى مَنْ عَادَانَا, وَلاَ تَجْعَلْ مُصِيبَتَنَا فِي دِينِنَا وَلاَ تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا, وَلاَ مَبْلَغَ عِلْمِنَا وَلاَ تُسَلِّطْ عَلَيْنَا مَنْ لاَ يَرْحَمُنَا</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್! ನಮ್ಮ ಮತ್ತು ಅಪರಾಧಗಳ ಮಧ್ಯೆ ಮರೆಯಾಗುವಂತೆ ನೀನು ನಮಗೆ ನಿನ್ನ ಅನುಸರಣೆಯನ್ನು ದಯಪಾಲಿಸು. ನಮ್ಮನ್ನು ನಿನ್ನ ಅನುಗ್ರಹದೆಡೆಗೆ ತಲುಪಿಸುವ ನಿನ್ನ ಭಯ-ಭಕ್ತಿಯನ್ನು ದಯಪಾಲಿಸು. ಲೌಕಿಕ ನಷ್ಟವನ್ನು ಕ್ಷುಲ್ಲಕವಾಗಿ ಕಾಣುವಂತೆ ಧೃಢ ವಿಶ್ವಾಸವನ್ನು ನಮಗೆ ದಯಪಾಲಿಸು. ನೀನು ನಮ್ಮನ್ನು ಬದುಕಿಸುವ ತನಕ ನಮಗೆ ನಮ್ಮ ಶ್ರವಣ, ದೃಷ್ಟಿ ಮತ್ತು ದೈಹಿಕ ಶಕ್ತಿಗಳಿಂದ ಪ್ರಯೋಜನ ಪಡೆಯುವ ಅವಕಾಶ ಒದಗಿಸು. ಈ ಒಳಿತನ್ನೇ ನಮ್ಮ ನಂತರವೂ ಜಾರಿಯಲ್ಲಿಡು. ನಮ್ಮ ಮೇಲೆ ಅನ್ಯಾಯ ಮಾಡುವವರಿಗೆ ನೀನೆ ನಮ್ಮ ವತಿಯಿಂದ ಪ್ರತೀಕಾರವೆಸಗು. ನಮ್ಮನ್ನು ದ್ವೇಷಿಸುವವರ ಮೇಲೆ ನಮಗೆ ಮೇಲುಗೈ ದಯಪಾಲಿಸು. ಲೋಕವನ್ನು ನಮ್ಮ ಪರಮೋದ್ದೇಶವಾಗಿಸಬೇಡ. ಲೋಕವನ್ನೇ ನಮ್ಮ ವಿದ್ಯೆ-ಬುದ್ಧಿಯ ಗುರಿಯಾಗಿಸಬೇಡ. ಕರುಣೆ ಇಲ್ಲದವರನ್ನು ನಮ್ಮ ಮೇಲೆ ಹೇರಬೇಡ.</div>
           </div>
 
-          <div class="verse-parent">
-            <div class="row" id="dua-no-4">
-              <div class="col-lg-1 col-md-2 verse-no-col">
-                <div class="verse-no">4</div>
-              </div>
-              <div class="col-lg-11 col-md-10 verse">
-                <div class="verse-content arabic">
-                  <span>اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي, وَأَصْلِحْ لِي دُنْيَاىَ الَّتِي فِيهَا مَعَاشِي, وَأَصْلِحْ لِي آخِرَتِيَ الَّتِي فِيهَا مَعَادِي, وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ, وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ. اَللّٰهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ وَخَيْرَ عَمَلِي خَوَاتِمَهُ وَخَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ فِيهِ.</span><span class="ayah-period-1">٤</span>
-                </div>
-                <div class="verse-translation">ಓ ಅಲ್ಲಾಹ್! ನನ್ನ ಕಾರ್ಯಗಳ ಮತ್ತು ವ್ಯವಹಾರಗಳ ಸಂರಕ್ಷಕವಾದ ಧರ್ಮವನ್ನು ಸರಿಪಡಿಸು, ನಾನಿರುವ ನನ್ನ ಇಹಲೋಕವನ್ನು ಸರಿಪಡಿಸು, ನಾನು ಮರಳಿ ಹೋಗಬೇಕಾದ ನನ್ನ ಪರಲೋಕವನ್ನೂ ಸರಿಪಡಿಸು, ನನ್ನ ಜೀವನವನ್ನು ಪ್ರತಿಯೊಂದು ಒಳಿತಿನಲ್ಲೂ ಹೆಚ್ಚಿಸು ಮತ್ತು ನನ್ನ ಮರಣವನ್ನು ಪ್ರತಿಯೊಂದು ಕೇಡಿನಿಂದ ಮುಕ್ತಿಯ ಸಾಧನವನ್ನಾಗಿ ಮಾಡು. ಅಲ್ಲಾಹನೇ! ನನ್ನ ಜೀವನದ ಅಂತಿಮ ಗಳಿಗೆಯನ್ನು ಉತ್ತಮಗೊಳಿಸು, ನನ್ನ ಕರ್ಮಗಳ ಪರ್ಯವಸಾನವನ್ನು ಉತ್ತಮಗೊಳಿಸು, ನಿನ್ನನ್ನು ಭೇಟಿಯಾಗುವ ದಿನವನ್ನು ನನ್ನ ಬದುಕಿನ ಅತ್ಯುತ್ತಮ ದಿನವನ್ನಾಗಿ ಮಾಡು.</div>
+          <div class="dua-card">
+            <div class="dua-header">
+              <div class="dua-title-group">
+                <span class="dua-number">4.</span>
               </div>
             </div>
+            <div class="dua-arabic" dir="rtl">اللَّهُمَّ أَصْلِحْ لِي دِينِيَ الَّذِي هُوَ عِصْمَةُ أَمْرِي, وَأَصْلِحْ لِي دُنْيَاىَ الَّتِي فِيهَا مَعَاشِي, وَأَصْلِحْ لِي آخِرَتِيَ الَّتِي فِيهَا مَعَادِي, وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي كُلِّ خَيْرٍ, وَاجْعَلِ الْمَوْتَ رَاحَةً لِي مِنْ كُلِّ شَرٍّ. اَللّٰهُمَّ اجْعَلْ خَيْرَ عُمُرِي آخِرَهُ وَخَيْرَ عَمَلِي خَوَاتِمَهُ وَخَيْرَ أَيَّامِي يَوْمَ أَلْقَاكَ فِيهِ.</div>
+            <div class="dua-kannada">ಓ ಅಲ್ಲಾಹ್! ನನ್ನ ಕಾರ್ಯಗಳ ಮತ್ತು ವ್ಯವಹಾರಗಳ ಸಂರಕ್ಷಕವಾದ ಧರ್ಮವನ್ನು ಸರಿಪಡಿಸು, ನಾನಿರುವ ನನ್ನ ಇಹಲೋಕವನ್ನು ಸರಿಪಡಿಸು, ನಾನು ಮರಳಿ ಹೋಗಬೇಕಾದ ನನ್ನ ಪರಲೋಕವನ್ನೂ ಸರಿಪಡಿಸು, ನನ್ನ ಜೀವನವನ್ನು ಪ್ರತಿಯೊಂದು ಒಳಿತಿನಲ್ಲೂ ಹೆಚ್ಚಿಸು ಮತ್ತು ನನ್ನ ಮರಣವನ್ನು ಪ್ರತಿಯೊಂದು ಕೇಡಿನಿಂದ ಮುಕ್ತಿಯ ಸಾಧನವನ್ನಾಗಿ ಮಾಡು. ಅಲ್ಲಾಹನೇ! ನನ್ನ ಜೀವನದ ಅಂತಿಮ ಗಳಿಗೆಯನ್ನು ಉತ್ತಮಗೊಳಿಸು, ನನ್ನ ಕರ್ಮಗಳ ಪರ್ಯವಸಾನವನ್ನು ಉತ್ತಮಗೊಳಿಸು, ನಿನ್ನನ್ನು ಭೇಟಿಯಾಗುವ ದಿನವನ್ನು ನನ್ನ ಬದುಕಿನ ಅತ್ಯುತ್ತಮ ದಿನವನ್ನಾಗಿ ಮಾಡು.</div>
           </div>
 
         </div>
@@ -2359,9 +3616,17 @@ $(document).ready(function() {
 $(function() {
   var hash = window.location.hash;
   if (hash) {
+    var $link = null;
     $('#prayers-tabs a').each(function() {
-      if ($(this).attr('href') === hash) { $(this).tab('show'); }
+      if ($(this).attr('href') === hash) { $link = $(this); }
     });
+    if ($link) {
+      $link.one('shown.bs.tab', function() {
+        var navH = $('.navbar').outerHeight() || 80;
+        $('html, body').scrollTop($(hash).offset().top - navH - 10);
+      });
+      $link.tab('show');
+    }
   }
 });
 </script>
