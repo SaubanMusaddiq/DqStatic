@@ -3621,11 +3621,15 @@ $(function() {
       if ($(this).attr('href') === hash) { $link = $(this); }
     });
     if ($link) {
-      $link.one('shown.bs.tab', function() {
-        var navH = $('.navbar').outerHeight() || 80;
+      var navH = $('.navbar').outerHeight() || 80;
+      if ($link.parent().hasClass('active')) {
         $('html, body').scrollTop($(hash).offset().top - navH - 10);
-      });
-      $link.tab('show');
+      } else {
+        $link.one('shown.bs.tab', function() {
+          $('html, body').scrollTop($(hash).offset().top - navH - 10);
+        });
+        $link.tab('show');
+      }
     }
   }
 });
