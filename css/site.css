@@ -212,8 +212,8 @@ a:hover{
 }
 .list-unstyled {
     list-style: none;
-    /* padding-left: 40px;
-    padding-right: 120px; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .list-unstyled > li{
     min-height: 72.8px;
@@ -234,7 +234,7 @@ a:hover{
 
 .list-unstyled > li:hover span {
   display: inline-block; /* Ensures proper scaling of inline text */
-  transform: scale(1.1); /* Scales the text */
+  transform: scale(1.05); /* Scales the text */
   transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
@@ -250,14 +250,14 @@ a:hover{
 }
 @media only screen and (max-width: 1250px) {
   .list-unstyled {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 @media only screen and (max-width: 760px) {
   .list-unstyled {
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -966,7 +966,7 @@ padding-left: 70px;
 }
 
 #site-banner{
-  background: url(/images/dq_banner.jpg) no-repeat center center;
+  background: url(/images/dq_banner.jpeg) no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 240px;
