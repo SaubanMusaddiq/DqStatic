@@ -966,13 +966,13 @@ padding-left: 70px;
 }
 
 #site-banner{
-  background : url(/images/bgdq.png) no-repeat;
-  width:100%;
-  height:240px;
-   background-size: cover;
-  position: -webkit-sticky; /* For Safari */
+  background: url(/images/dq_banner.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 240px;
+  position: -webkit-sticky;
   position: sticky;
-  top: -200px; 
+  top: -200px;
   z-index: 1000;
 }
 
@@ -1018,18 +1018,8 @@ padding-left: 70px;
 
 @media only screen and (max-width: 1255px) {
   #site-banner {
-    background : url(/images/bgdq.png) no-repeat;
-    -webkit-background-size: 131% 48%;
-    -moz-background-size: 131% 48%;
-    -o-background-size: 131% 48%;
-    background-size: 131% 48%;
-    width:146%;
-    height:340px;
-     background-size: cover;
-        margin-left: -45%;
-    margin-bottom: -4%;   
-        position: sticky;
-    top: -282px; 
+    height: 300px;
+    top: -240px;
   }
   #chapter-banner {
     width:150%;
@@ -1040,14 +1030,8 @@ padding-left: 70px;
 }
 @media only screen and (max-width: 1025px) {
   #site-banner {
-    height:290px;
-    -webkit-background-size: 131% 89%;
-    -moz-background-size: 131% 89%;
-    -o-background-size: 131% 89%;
-    background-size: 131% 89%;
-    margin-bottom: -7.5%;  
-        position: sticky;
-    top: -201px;
+    height: 260px;
+    top: -200px;
   }
   #chapter-banner {
     width:150%;
@@ -1059,15 +1043,9 @@ padding-left: 70px;
   }
 }
 @media only screen and (max-width: 770px) {
-  #site-banner{
-    height:250px;
-    -webkit-background-size: 127% 78%;
-    -moz-background-size: 127% 78%;
-    -o-background-size: 127% 78%;
-    background-size: 127% 78%;
-    margin-bottom: -8.5%; 
-    position: sticky;
-    top: -137px;
+  #site-banner {
+    height: 200px;
+    top: -140px;
   }
   #chapter-banner {
     width:150%;
@@ -1081,15 +1059,8 @@ padding-left: 70px;
 }
 @media only screen and (max-width: 480px) {
   #site-banner {
-    height:242px;
-    -webkit-background-size: 131% 48%;
-    -moz-background-size: 131% 48%;
-    -o-background-size: 131% 48%;
-    background-size: 131% 48%;
-    width:146%;
-    margin-bottom: -36.5%; 
-        position: sticky;
-    top: -84px;
+    height: 160px;
+    top: -100px;
   }
   #chapter-banner {
     width:158%;
