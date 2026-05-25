@@ -347,6 +347,10 @@ margin: 0;
   color: #000;
   margin-top:10px ;
 }
+#header .chapter-dd a:hover, #header .verse-dd a:hover, #header .prayers-dd a:hover {
+  background-color: #eed4b0;
+  color: #3d0000;
+}
 
 .arabic-title-header{
 float: right;
