@@ -137,6 +137,7 @@ body {
 
 .container-fluid {
     padding-right: 25px  !important;
+    border: 1px solid transparent;
 }
 
 .night-mode {
@@ -514,7 +515,7 @@ margin-top: -34px;
   transform: none;
  }
  .home-header #chapter-kan{
-    padding-left: 28px;
+    padding-left: 0px;
  }
 
 }
@@ -883,7 +884,7 @@ padding-left: 70px;
   }
   #prayers-dropdown{
     padding-top: 12px !important;
-    margin-left: 75px;
+    /* margin-left: 75px; */
     padding-bottom: 12px !important;
   }
   #chapter-intro{

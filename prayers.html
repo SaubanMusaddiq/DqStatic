@@ -1957,74 +1957,95 @@
     min-height: calc(100vh - 71px);
   }
 
+  /* ── Page background ── */
+  #prayers-wrapper {
+    background: #f6f2ec;
+  }
+
   /* ── Sidebar ── */
   #prayers-sidenav {
     padding: 0;
-    border-right: 1px solid #eed4af;
-    background: #faf7f2;
+    border-right: none;
+    background: #fff;
     min-height: calc(100vh - 71px);
+    box-shadow: 2px 0 12px rgba(0,0,0,0.06);
   }
 
   .prayers-nav-title {
-    
-    font-size: 17px;
-    font-weight: 600;
-    color: #eed4af;
-    background: #3d0000;
-    padding: 15px 18px 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, #3d0000 0%, #6b1010 100%);
+    padding: 18px 20px;
     margin: 0;
-    margin-top: 1px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 
   #prayers-tabs {
-    margin: 8px 0;
+    margin: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 
   #prayers-tabs.nav-pills > li > a {
-    border-radius: 0;
-    color: #444;
-    font-size: 15px;
-    padding: 14px 22px;
-    border-left: 4px solid transparent;
-    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    border-radius: 10px;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px;
+    border-left: none;
+    transition: background 0.18s ease, color 0.18s ease, transform 0.15s ease;
     background: transparent;
   }
 
   #prayers-tabs.nav-pills > li > a:hover {
-    background: #ede3d0;
+    background: #f5ede0;
     color: #3d0000;
-    border-left-color: #c19967;
+    transform: translateX(3px);
   }
 
   #prayers-tabs.nav-pills > li.active > a,
   #prayers-tabs.nav-pills > li.active > a:hover,
   #prayers-tabs.nav-pills > li.active > a:focus {
-    background: #3d0000;
+    background: linear-gradient(135deg, #3d0000 0%, #6b1010 100%);
     color: #eed4af;
-    border-left-color: #eed4af;
+    box-shadow: 0 4px 12px rgba(61,0,0,0.25);
   }
-
 
   /* ── Content area ── */
   #prayers-content {
-    padding: 28px 36px 56px;
+    padding: 32px 40px 60px;
+    background: #f6f2ec;
   }
 
   .prayers-section-title {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
     color: #3d0000;
     margin-bottom: 4px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eed4af;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+    display: inline-block;
+  }
+  .prayers-section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #3d0000, #c19967);
+    border-radius: 2px;
+    margin-top: 6px;
   }
 
   .prayers-section-subtitle {
-    color: #888;
+    color: #999;
     font-size: 13px;
     font-style: italic;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
+    margin-top: 8px;
   }
 
   /* ── Dua verse display — mirrors #chapter-verses rules from site.css ── */
@@ -2094,100 +2115,124 @@
   @media (max-width: 767px) {
     #prayers-layout {
       margin-left: 0;
-      margin-right: -14px;
+      margin-right: 0;
     }
     #prayers-sidenav {
-      border-right: none;
-      border-bottom: 2px solid #eed4af;
+      box-shadow: none;
+      border-bottom: 1px solid #f0e5d0;
       min-height: auto;
     }
-    #prayers-content {
-      padding: 20px 15px 40px;
+    #prayers-tabs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 10px 12px;
     }
     #prayers-tabs.nav-pills > li {
       display: inline-block;
     }
+    #prayers-tabs.nav-pills > li.active > a {
+      box-shadow: 0 2px 8px rgba(61,0,0,0.2);
+    }
     .prayers-nav-title {
       text-align: center;
-      margin-left: -15px;
-      margin-right: -15px;
     }
   }
 
-  /* ── Quranic Duas cards ── */
+  /* ── Dua cards ── */
   .dua-card {
     background: #fff;
-    border: 1px solid #e8d9c0;
-    border-radius: 6px;
-    padding: 20px 24px;
+    border: none;
+    border-radius: 16px;
+    padding: 24px 28px;
     margin-bottom: 20px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 16px rgba(61,0,0,0.07);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  .dua-card:hover {
+    box-shadow: 0 6px 24px rgba(61,0,0,0.12);
+    transform: translateY(-2px);
   }
   .dua-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 14px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #f0e5d0;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f5ece0;
   }
   .dua-title-group {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
   }
   .dua-number {
     font-weight: 700;
-    color: #3d0000;
-    font-size: 18px;
+    color: #fff;
+    font-size: 13px;
     flex-shrink: 0;
+    background: #3d0000;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .dua-title-kn {
     font-size: 19px;
     font-weight: 600;
-    color: #222;
+    color: #1a1a1a;
   }
   .dua-title-en {
-    font-size: 16px;
-    color: #777;
+    font-size: 15px;
+    color: #999;
   }
   .dua-ref {
-    font-size: 15px;
-    color: #3d0000;
+    font-size: 13px;
+    color: #c19967;
     white-space: nowrap;
     flex-shrink: 0;
     text-align: right;
     padding-top: 2px;
+    font-weight: 500;
   }
   .dua-arabic {
     font-size: 28px;
-    line-height: 2;
+    line-height: 2.1;
     text-align: right;
     direction: rtl;
     color: #1a1a1a;
-    margin-bottom: 12px;
-    padding: 8px 0 12px;
-    border-bottom: 1px dashed #e0d0b8;
+    margin-bottom: 16px;
+    padding: 12px 16px 16px;
+    border-bottom: none;
+    background: #fdf8f2;
+    border-radius: 10px;
   }
   .dua-kannada {
     font-size: 19px;
-    line-height: 1.75;
+    line-height: 1.8;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .dua-english {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #555;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #777;
     font-style: italic;
+    padding-top: 8px;
+    border-top: 1px solid #f5ece0;
   }
   @media (max-width: 767px) {
-    .dua-card { padding: 14px 16px; }
-    .dua-header { flex-direction: column; gap: 4px; }
+    .dua-card { padding: 18px 16px; border-radius: 12px; }
+    .dua-header { flex-direction: column; gap: 6px; }
     .dua-ref { text-align: left; }
-    .dua-arabic { font-size: 24px; }
+    .dua-arabic { font-size: 23px; padding: 10px 12px 14px; }
+    #prayers-content { padding: 20px 12px 40px; }
+    #prayers-tabs { margin: 10px 8px; }
+    #prayers-tabs.nav-pills > li > a { padding: 10px 14px; font-size: 13px; }
+    .prayers-nav-title { letter-spacing: 0.5px; }
   }
 </style>
 
