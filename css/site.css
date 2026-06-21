@@ -156,19 +156,27 @@ body {
 .ayah-period{padding: 0 7px;}
 
 .ayah-period-1 {
+  display: -webkit-inline-flex;
   display: inline-flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 35px;
   height: 35px;
+  min-width: 35px;
   padding-top: 6px;
   background: url(/images/verse_number.png) no-repeat center center;
   background-size: cover;
   font-size: 13px;
   line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  vertical-align: middle;
   position: relative;
-  top: -6px;
+  top: -4px;
   letter-spacing: -0.5px;
   font-family: 'Arial', sans-serif;
   font-feature-settings: 'lnum' 0;
