@@ -156,23 +156,22 @@ body {
 .ayah-period{padding: 0 7px;}
 
 .ayah-period-1 {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   width: 35px;
   height: 35px;
-  background: url(/images/vnum.png) no-repeat;
+  padding-top: 6px;
+  background: url(/images/verse_number.png) no-repeat center center;
   background-size: cover;
-  background-position: center;
-  text-align: center;
-  line-height: 24px;
-  font-size: 14px;
-  border-radius: 50%; /* Ensures the image is circular */
+  font-size: 13px;
+  line-height: 1;
   position: relative;
-  top: -8px;
-  padding-top: 7px;
-  padding-left: 4px;
+  top: -6px;
   letter-spacing: -0.5px;
-   font-feature-settings: 'lnum' 0;
-    font-family: 'Arial', sans-serif;
+  font-family: 'Arial', sans-serif;
+  font-feature-settings: 'lnum' 0;
   unicode-bidi: bidi-override;
   direction: rtl;
   margin: 0 3px;
